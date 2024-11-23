@@ -1,0 +1,6 @@
+config NXPEXP_MCU
+    bool
+
+config NXPEXAMPLE_BOARD
+    bool
+    select NXPEXP_MCU
