@@ -27,7 +27,7 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_genCases_writeTestsTotal.c
  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h ../tests/fp/platform.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/genCases.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \

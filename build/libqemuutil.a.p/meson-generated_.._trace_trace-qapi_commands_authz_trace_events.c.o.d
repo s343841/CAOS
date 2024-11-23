@@ -1,9 +1,8 @@
 libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_authz_trace_events.c.o: \
  trace/trace-qapi_commands_authz_trace_events.c \
- /usr/include/stdc-predef.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/osdep.h config-host.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/poison.h config-poison.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /usr/include/stdc-predef.h /home/leroooy/QemuNXP/include/qemu/osdep.h \
+ config-host.h /home/leroooy/QemuNXP/include/exec/poison.h \
+ config-poison.h /home/leroooy/QemuNXP/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
@@ -110,9 +109,9 @@ libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_authz_trace_events.
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/asm-generic/bitsperlong.h \
+ /home/leroooy/QemuNXP/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/linux/stddef.h \
+ /home/leroooy/QemuNXP/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -148,9 +147,8 @@ libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_authz_trace_events.
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
  /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
- /home/Antonello/Desktop/qemu-AVR32/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/leroooy/QemuNXP/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
@@ -230,7 +228,7 @@ libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_authz_trace_events.
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/glib-2.0/glib/gstdio.h \
  /usr/include/glib-2.0/glib/gprintf.h /usr/include/pwd.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/os-posix.h \
+ /home/leroooy/QemuNXP/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -253,11 +251,11 @@ libqemuutil.a.p/meson-generated_.._trace_trace-qapi_commands_authz_trace_events.
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/typedefs.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/module.h \
+ /home/leroooy/QemuNXP/include/qemu/typedefs.h \
+ /home/leroooy/QemuNXP/include/qemu/module.h \
  trace/trace-qapi_commands_authz_trace_events.h \
- /home/Antonello/Desktop/qemu-AVR32/trace/control.h \
- /home/Antonello/Desktop/qemu-AVR32/trace/event-internal.h \
- /home/Antonello/Desktop/qemu-AVR32/trace/control-internal.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/log-for-trace.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/error-report.h
+ /home/leroooy/QemuNXP/trace/control.h \
+ /home/leroooy/QemuNXP/trace/event-internal.h \
+ /home/leroooy/QemuNXP/trace/control-internal.h \
+ /home/leroooy/QemuNXP/include/qemu/log-for-trace.h \
+ /home/leroooy/QemuNXP/include/qemu/error-report.h

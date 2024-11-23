@@ -50,5 +50,5 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_random.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h ../tests/fp/platform.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/random.h

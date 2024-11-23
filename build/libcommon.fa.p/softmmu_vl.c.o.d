@@ -1,7 +1,7 @@
 libcommon.fa.p/softmmu_vl.c.o: ../softmmu/vl.c /usr/include/stdc-predef.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/osdep.h config-host.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/poison.h config-poison.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/osdep.h config-host.h \
+ /home/leroooy/QemuNXP/include/exec/poison.h config-poison.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
@@ -108,9 +108,9 @@ libcommon.fa.p/softmmu_vl.c.o: ../softmmu/vl.c /usr/include/stdc-predef.h \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/asm-generic/bitsperlong.h \
+ /home/leroooy/QemuNXP/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/linux/stddef.h \
+ /home/leroooy/QemuNXP/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -146,9 +146,8 @@ libcommon.fa.p/softmmu_vl.c.o: ../softmmu/vl.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
  /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
- /home/Antonello/Desktop/qemu-AVR32/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/leroooy/QemuNXP/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
@@ -228,7 +227,7 @@ libcommon.fa.p/softmmu_vl.c.o: ../softmmu/vl.c /usr/include/stdc-predef.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/glib-2.0/glib/gstdio.h \
  /usr/include/glib-2.0/glib/gprintf.h /usr/include/pwd.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/os-posix.h \
+ /home/leroooy/QemuNXP/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -251,224 +250,208 @@ libcommon.fa.p/softmmu_vl.c.o: ../softmmu/vl.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/typedefs.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/help-texts.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/datadir.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/units.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/cpu-common.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/hwaddr.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/page-vary.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/qdev-properties.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/qdev-core.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/queue.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/bitmap.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/bitops.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/host-utils.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/bswap.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/int128.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/atomic.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/rcu.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/thread.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/processor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/atomic.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/clang-tsa.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/thread-posix.h \
+ /home/leroooy/QemuNXP/include/qemu/typedefs.h \
+ /home/leroooy/QemuNXP/include/qemu/help-texts.h \
+ /home/leroooy/QemuNXP/include/qemu/datadir.h \
+ /home/leroooy/QemuNXP/include/qemu/units.h \
+ /home/leroooy/QemuNXP/include/exec/cpu-common.h \
+ /home/leroooy/QemuNXP/include/exec/hwaddr.h \
+ /home/leroooy/QemuNXP/include/exec/page-vary.h \
+ /home/leroooy/QemuNXP/include/hw/qdev-properties.h \
+ /home/leroooy/QemuNXP/include/hw/qdev-core.h \
+ /home/leroooy/QemuNXP/include/qemu/queue.h \
+ /home/leroooy/QemuNXP/include/qemu/bitmap.h \
+ /home/leroooy/QemuNXP/include/qemu/bitops.h \
+ /home/leroooy/QemuNXP/include/qemu/host-utils.h \
+ /home/leroooy/QemuNXP/include/qemu/bswap.h \
+ /home/leroooy/QemuNXP/include/qemu/int128.h \
+ /home/leroooy/QemuNXP/include/qemu/atomic.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/rcu.h \
+ /home/leroooy/QemuNXP/include/qemu/thread.h \
+ /home/leroooy/QemuNXP/include/qemu/processor.h \
+ /home/leroooy/QemuNXP/include/qemu/atomic.h \
+ /home/leroooy/QemuNXP/include/qemu/clang-tsa.h \
+ /home/leroooy/QemuNXP/include/qemu/thread-posix.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/qsp.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/notify.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/sys_membarrier.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/coroutine-tls.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/rcu_queue.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qom/object.h \
- qapi/qapi-builtin-types.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/util.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/module.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/hotplug.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/resettable.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/compat-policy.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/error.h \
- qapi/qapi-types-error.h qapi/qapi-types-compat.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qdict.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qobject.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qstring.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qjson.h \
- qemu-version.h /home/Antonello/Desktop/qemu-AVR32/include/qemu/cutils.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/help_option.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/hw-version.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/uuid.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/reset.h \
+ /home/leroooy/QemuNXP/include/qemu/qsp.h \
+ /home/leroooy/QemuNXP/include/qemu/notify.h \
+ /home/leroooy/QemuNXP/include/qemu/sys_membarrier.h \
+ /home/leroooy/QemuNXP/include/qemu/coroutine-tls.h \
+ /home/leroooy/QemuNXP/include/qemu/rcu_queue.h \
+ /home/leroooy/QemuNXP/include/qom/object.h qapi/qapi-builtin-types.h \
+ /home/leroooy/QemuNXP/include/qapi/util.h \
+ /home/leroooy/QemuNXP/include/qemu/module.h \
+ /home/leroooy/QemuNXP/include/hw/hotplug.h \
+ /home/leroooy/QemuNXP/include/hw/resettable.h \
+ /home/leroooy/QemuNXP/include/qapi/compat-policy.h \
+ /home/leroooy/QemuNXP/include/qapi/error.h qapi/qapi-types-error.h \
+ qapi/qapi-types-compat.h /home/leroooy/QemuNXP/include/qapi/qmp/qdict.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qobject.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qstring.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qjson.h qemu-version.h \
+ /home/leroooy/QemuNXP/include/qemu/cutils.h \
+ /home/leroooy/QemuNXP/include/qemu/help_option.h \
+ /home/leroooy/QemuNXP/include/qemu/hw-version.h \
+ /home/leroooy/QemuNXP/include/qemu/uuid.h \
+ /home/leroooy/QemuNXP/include/sysemu/reset.h \
  qapi/qapi-events-run-state.h qapi/qapi-types-run-state.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/runstate.h \
+ /home/leroooy/QemuNXP/include/sysemu/runstate.h \
  qapi/qapi-types-run-state.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/runstate-action.h \
+ /home/leroooy/QemuNXP/include/sysemu/runstate-action.h \
  qapi/qapi-commands-run-state.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/seccomp.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/tcg.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/xen.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/error-report.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/sockets.h \
- qapi/qapi-types-sockets.h qapi/qapi-types-common.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/accel.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/usb.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memory.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memattrs.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memop.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/host-utils.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/ramlist.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memory_ldst.h.inc \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memory_ldst_phys.h.inc \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memory_ldst_cached.h.inc \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/iov.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/isa/isa.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/ioport.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/scsi/scsi.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/aio.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/coroutine-core.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/event_notifier.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/timer.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/graph-lock.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/block/block.h \
+ /home/leroooy/QemuNXP/include/sysemu/seccomp.h \
+ /home/leroooy/QemuNXP/include/sysemu/tcg.h \
+ /home/leroooy/QemuNXP/include/sysemu/xen.h \
+ /home/leroooy/QemuNXP/include/qemu/error-report.h \
+ /home/leroooy/QemuNXP/include/qemu/sockets.h qapi/qapi-types-sockets.h \
+ qapi/qapi-types-common.h /home/leroooy/QemuNXP/include/qemu/accel.h \
+ /home/leroooy/QemuNXP/include/hw/usb.h \
+ /home/leroooy/QemuNXP/include/exec/memory.h \
+ /home/leroooy/QemuNXP/include/exec/memattrs.h \
+ /home/leroooy/QemuNXP/include/exec/memop.h \
+ /home/leroooy/QemuNXP/include/qemu/host-utils.h \
+ /home/leroooy/QemuNXP/include/exec/ramlist.h \
+ /home/leroooy/QemuNXP/include/exec/memory_ldst.h.inc \
+ /home/leroooy/QemuNXP/include/exec/memory_ldst_phys.h.inc \
+ /home/leroooy/QemuNXP/include/exec/memory_ldst_cached.h.inc \
+ /home/leroooy/QemuNXP/include/qemu/iov.h \
+ /home/leroooy/QemuNXP/include/hw/isa/isa.h \
+ /home/leroooy/QemuNXP/include/exec/ioport.h \
+ /home/leroooy/QemuNXP/include/hw/scsi/scsi.h \
+ /home/leroooy/QemuNXP/include/block/aio.h \
+ /home/leroooy/QemuNXP/include/qemu/coroutine-core.h \
+ /home/leroooy/QemuNXP/include/qemu/event_notifier.h \
+ /home/leroooy/QemuNXP/include/qemu/timer.h \
+ /home/leroooy/QemuNXP/include/block/graph-lock.h \
+ /home/leroooy/QemuNXP/include/hw/block/block.h \
  qapi/qapi-types-block-core.h qapi/qapi-types-crypto.h \
  qapi/qapi-types-job.h qapi/qapi-types-sockets.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/qdev-properties-system.h \
- /home/Antonello/Desktop/qemu-AVR32/include/scsi/utils.h \
- /usr/include/scsi/sg.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/display/vga.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/firmware/smbios.h \
- qapi/qapi-types-machine.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/acpi/acpi.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/acpi/acpi_dev_interface.h \
- qapi/qapi-types-acpi.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/boards.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/hostmem.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/numa.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/thread-context.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/blockdev.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/block.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/block-global-state.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/block-common.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/blockjob.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/job.h \
- qapi/qapi-types-job.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/progress_meter.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/coroutine.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/lockable.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/ratelimit.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/transactions.h \
+ /home/leroooy/QemuNXP/include/hw/qdev-properties-system.h \
+ /home/leroooy/QemuNXP/include/scsi/utils.h /usr/include/scsi/sg.h \
+ /home/leroooy/QemuNXP/include/hw/display/vga.h \
+ /home/leroooy/QemuNXP/include/hw/firmware/smbios.h \
+ qapi/qapi-types-machine.h /home/leroooy/QemuNXP/include/hw/acpi/acpi.h \
+ /home/leroooy/QemuNXP/include/hw/acpi/acpi_dev_interface.h \
+ qapi/qapi-types-acpi.h /home/leroooy/QemuNXP/include/hw/boards.h \
+ /home/leroooy/QemuNXP/include/sysemu/hostmem.h \
+ /home/leroooy/QemuNXP/include/sysemu/numa.h \
+ /home/leroooy/QemuNXP/include/qemu/thread-context.h \
+ /home/leroooy/QemuNXP/include/sysemu/blockdev.h \
+ /home/leroooy/QemuNXP/include/block/block.h \
+ /home/leroooy/QemuNXP/include/block/block-global-state.h \
+ /home/leroooy/QemuNXP/include/block/block-common.h \
+ /home/leroooy/QemuNXP/include/block/blockjob.h \
+ /home/leroooy/QemuNXP/include/qemu/job.h qapi/qapi-types-job.h \
+ /home/leroooy/QemuNXP/include/qemu/progress_meter.h \
+ /home/leroooy/QemuNXP/include/qemu/coroutine.h \
+ /home/leroooy/QemuNXP/include/qemu/lockable.h \
+ /home/leroooy/QemuNXP/include/qemu/ratelimit.h \
+ /home/leroooy/QemuNXP/include/qemu/transactions.h \
  /usr/include/glib-2.0/gmodule.h \
  /usr/include/glib-2.0/gmodule/gmodule-visibility.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/block-io.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/aio-wait.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/main-loop.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/event-loop-base.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/core/cpu.h \
- /home/Antonello/Desktop/qemu-AVR32/include/disas/dis-asm.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/plugin-event.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/xen/xen.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/loader.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/nvram/fw_cfg.h \
- /home/Antonello/Desktop/qemu-AVR32/include/standard-headers/linux/qemu_fw_cfg.h \
- /home/Antonello/Desktop/qemu-AVR32/include/standard-headers/linux/types.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/sysbus.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/dma.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/address-spaces.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/accounting.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/timed-average.h \
- qapi/qapi-types-common.h \
- /home/Antonello/Desktop/qemu-AVR32/include/monitor/qdev.h \
- /home/Antonello/Desktop/qemu-AVR32/include/net/net.h \
- qapi/qapi-types-net.h \
- /home/Antonello/Desktop/qemu-AVR32/include/net/queue.h \
- /home/Antonello/Desktop/qemu-AVR32/include/net/slirp.h \
- /home/Antonello/Desktop/qemu-AVR32/include/monitor/monitor.h \
- qapi/qapi-types-misc.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/readline.h \
- /home/Antonello/Desktop/qemu-AVR32/include/ui/console.h \
- /home/Antonello/Desktop/qemu-AVR32/include/ui/qemu-pixman.h \
+ /home/leroooy/QemuNXP/include/block/block-io.h \
+ /home/leroooy/QemuNXP/include/block/aio-wait.h \
+ /home/leroooy/QemuNXP/include/qemu/main-loop.h \
+ /home/leroooy/QemuNXP/include/sysemu/event-loop-base.h \
+ /home/leroooy/QemuNXP/include/hw/core/cpu.h \
+ /home/leroooy/QemuNXP/include/disas/dis-asm.h \
+ /home/leroooy/QemuNXP/include/qemu/plugin-event.h \
+ /home/leroooy/QemuNXP/include/hw/xen/xen.h \
+ /home/leroooy/QemuNXP/include/hw/loader.h \
+ /home/leroooy/QemuNXP/include/hw/nvram/fw_cfg.h \
+ /home/leroooy/QemuNXP/include/standard-headers/linux/qemu_fw_cfg.h \
+ /home/leroooy/QemuNXP/include/standard-headers/linux/types.h \
+ /home/leroooy/QemuNXP/include/hw/sysbus.h \
+ /home/leroooy/QemuNXP/include/sysemu/dma.h \
+ /home/leroooy/QemuNXP/include/exec/address-spaces.h \
+ /home/leroooy/QemuNXP/include/block/accounting.h \
+ /home/leroooy/QemuNXP/include/qemu/timed-average.h \
+ qapi/qapi-types-common.h /home/leroooy/QemuNXP/include/monitor/qdev.h \
+ /home/leroooy/QemuNXP/include/net/net.h qapi/qapi-types-net.h \
+ /home/leroooy/QemuNXP/include/net/queue.h \
+ /home/leroooy/QemuNXP/include/net/slirp.h \
+ /home/leroooy/QemuNXP/include/monitor/monitor.h qapi/qapi-types-misc.h \
+ /home/leroooy/QemuNXP/include/qemu/readline.h \
+ /home/leroooy/QemuNXP/include/ui/console.h \
+ /home/leroooy/QemuNXP/include/ui/qemu-pixman.h \
  /usr/include/pixman-1/pixman.h /usr/include/pixman-1/pixman-version.h \
- qapi/qapi-types-ui.h \
- /home/Antonello/Desktop/qemu-AVR32/include/ui/input.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/sysemu.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/gdbstub.h \
- /home/Antonello/Desktop/qemu-AVR32/include/chardev/char.h \
- qapi/qapi-types-char.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/log.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/log-for-trace.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/i386/x86.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/intc/ioapic.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/i386/pc.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/block/fdc.h \
- qapi/qapi-types-block.h qapi/qapi-types-block-core.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/block/flash.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/i386/sgx-epc.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/i386/hostmem-epc.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/cxl/cxl.h \
- qapi/qapi-visit-machine.h qapi/qapi-builtin-visit.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/visitor.h \
+ qapi/qapi-types-ui.h /home/leroooy/QemuNXP/include/ui/input.h \
+ /home/leroooy/QemuNXP/include/sysemu/sysemu.h \
+ /home/leroooy/QemuNXP/include/exec/gdbstub.h \
+ /home/leroooy/QemuNXP/include/chardev/char.h qapi/qapi-types-char.h \
+ /home/leroooy/QemuNXP/include/qemu/log.h \
+ /home/leroooy/QemuNXP/include/qemu/log-for-trace.h \
+ /home/leroooy/QemuNXP/include/hw/i386/x86.h \
+ /home/leroooy/QemuNXP/include/hw/intc/ioapic.h \
+ /home/leroooy/QemuNXP/include/hw/i386/pc.h \
+ /home/leroooy/QemuNXP/include/hw/block/fdc.h qapi/qapi-types-block.h \
+ qapi/qapi-types-block-core.h \
+ /home/leroooy/QemuNXP/include/hw/block/flash.h \
+ /home/leroooy/QemuNXP/include/hw/i386/sgx-epc.h \
+ /home/leroooy/QemuNXP/include/hw/i386/hostmem-epc.h \
+ /home/leroooy/QemuNXP/include/hw/cxl/cxl.h qapi/qapi-visit-machine.h \
+ qapi/qapi-builtin-visit.h /home/leroooy/QemuNXP/include/qapi/visitor.h \
  qapi/qapi-types-machine.h qapi/qapi-visit-common.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pci_host.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/cxl/cxl_pci.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/cxl/cxl_component.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/range.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/cxl/cxl_cdat.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/cxl/cxl_pci.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pcie_doe.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/register.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/registerfields.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/cxl/cxl_device.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/cxl/cxl_component.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pci_device.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pci.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pci_ids.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pci_regs.h \
- /home/Antonello/Desktop/qemu-AVR32/include/standard-headers/linux/pci_regs.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pcie.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pcie_regs.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pcie_aer.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/pci/pcie_sriov.h \
- /home/Antonello/Desktop/qemu-AVR32/include/migration/misc.h \
- /home/Antonello/Desktop/qemu-AVR32/include/migration/snapshot.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/tpm.h \
- qapi/qapi-types-tpm.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/audio/soundhw.h \
- /home/Antonello/Desktop/qemu-AVR32/audio/audio.h qapi/qapi-types-audio.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/cpus.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/accel-ops.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/cpu-timers.h \
- /home/Antonello/Desktop/qemu-AVR32/include/migration/colo.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pci_host.h \
+ /home/leroooy/QemuNXP/include/hw/cxl/cxl_pci.h \
+ /home/leroooy/QemuNXP/include/hw/cxl/cxl_component.h \
+ /home/leroooy/QemuNXP/include/qemu/range.h \
+ /home/leroooy/QemuNXP/include/hw/cxl/cxl_cdat.h \
+ /home/leroooy/QemuNXP/include/hw/cxl/cxl_pci.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pcie_doe.h \
+ /home/leroooy/QemuNXP/include/hw/register.h \
+ /home/leroooy/QemuNXP/include/hw/registerfields.h \
+ /home/leroooy/QemuNXP/include/hw/cxl/cxl_device.h \
+ /home/leroooy/QemuNXP/include/hw/cxl/cxl_component.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pci_device.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pci.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pci_ids.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pci_regs.h \
+ /home/leroooy/QemuNXP/include/standard-headers/linux/pci_regs.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pcie.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pcie_regs.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pcie_aer.h \
+ /home/leroooy/QemuNXP/include/hw/pci/pcie_sriov.h \
+ /home/leroooy/QemuNXP/include/migration/misc.h \
+ /home/leroooy/QemuNXP/include/migration/snapshot.h \
+ /home/leroooy/QemuNXP/include/sysemu/tpm.h qapi/qapi-types-tpm.h \
+ /home/leroooy/QemuNXP/include/hw/audio/soundhw.h \
+ /home/leroooy/QemuNXP/audio/audio.h qapi/qapi-types-audio.h \
+ /home/leroooy/QemuNXP/include/sysemu/cpus.h \
+ /home/leroooy/QemuNXP/include/sysemu/accel-ops.h \
+ /home/leroooy/QemuNXP/include/sysemu/cpu-timers.h \
+ /home/leroooy/QemuNXP/include/migration/colo.h \
  qapi/qapi-types-migration.h \
- /home/Antonello/Desktop/qemu-AVR32/migration/postcopy-ram.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/kvm.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/hax.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qobject-input-visitor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/option.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/config-file.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/qemu-options.h \
- qemu-options.def \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/qtest.h \
- /home/Antonello/Desktop/qemu-AVR32/accel/tcg/perf.h \
- /home/Antonello/Desktop/qemu-AVR32/include/disas/disas.h \
- ../softmmu/trace.h trace/trace-softmmu.h \
- /home/Antonello/Desktop/qemu-AVR32/trace/control.h \
- /home/Antonello/Desktop/qemu-AVR32/trace/event-internal.h \
- /home/Antonello/Desktop/qemu-AVR32/trace/control-internal.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/plugin.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/qemu-plugin.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memopidx.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/arch_init.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/confidential-guest-support.h \
- /home/Antonello/Desktop/qemu-AVR32/include/ui/qemu-spice.h \
- /home/Antonello/Desktop/qemu-AVR32/include/ui/qemu-spice-module.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/string-input-visitor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/opts-visitor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/clone-visitor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qom/object_interfaces.h \
+ /home/leroooy/QemuNXP/migration/postcopy-ram.h \
+ /home/leroooy/QemuNXP/include/sysemu/kvm.h \
+ /home/leroooy/QemuNXP/include/sysemu/hax.h \
+ /home/leroooy/QemuNXP/include/qapi/qobject-input-visitor.h \
+ /home/leroooy/QemuNXP/include/qemu/option.h \
+ /home/leroooy/QemuNXP/include/qemu/config-file.h \
+ /home/leroooy/QemuNXP/include/qemu/qemu-options.h qemu-options.def \
+ /home/leroooy/QemuNXP/include/sysemu/qtest.h \
+ /home/leroooy/QemuNXP/accel/tcg/perf.h \
+ /home/leroooy/QemuNXP/include/disas/disas.h ../softmmu/trace.h \
+ trace/trace-softmmu.h /home/leroooy/QemuNXP/trace/control.h \
+ /home/leroooy/QemuNXP/trace/event-internal.h \
+ /home/leroooy/QemuNXP/trace/control-internal.h \
+ /home/leroooy/QemuNXP/include/qemu/plugin.h \
+ /home/leroooy/QemuNXP/include/qemu/qemu-plugin.h \
+ /home/leroooy/QemuNXP/include/exec/memopidx.h \
+ /home/leroooy/QemuNXP/include/sysemu/arch_init.h \
+ /home/leroooy/QemuNXP/include/exec/confidential-guest-support.h \
+ /home/leroooy/QemuNXP/include/ui/qemu-spice.h \
+ /home/leroooy/QemuNXP/include/ui/qemu-spice-module.h \
+ /home/leroooy/QemuNXP/include/qapi/string-input-visitor.h \
+ /home/leroooy/QemuNXP/include/qapi/opts-visitor.h \
+ /home/leroooy/QemuNXP/include/qapi/clone-visitor.h \
+ /home/leroooy/QemuNXP/include/qom/object_interfaces.h \
  qapi/qapi-types-qom.h qapi/qapi-types-authz.h \
- /home/Antonello/Desktop/qemu-AVR32/include/semihosting/semihost.h \
- /home/Antonello/Desktop/qemu-AVR32/include/crypto/init.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/replay.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/replay-core.h \
+ /home/leroooy/QemuNXP/include/semihosting/semihost.h \
+ /home/leroooy/QemuNXP/include/crypto/init.h \
+ /home/leroooy/QemuNXP/include/sysemu/replay.h \
+ /home/leroooy/QemuNXP/include/exec/replay-core.h \
  qapi/qapi-types-replay.h qapi/qapi-visit-audio.h qapi/qapi-types-audio.h \
  qapi/qapi-visit-block-core.h qapi/qapi-visit-crypto.h \
  qapi/qapi-visit-job.h qapi/qapi-visit-sockets.h qapi/qapi-visit-compat.h \
@@ -479,9 +462,8 @@ libcommon.fa.p/softmmu_vl.c.o: ../softmmu/vl.c /usr/include/stdc-predef.h \
  qapi/qapi-types-migration.h qapi/qapi-commands-misc.h \
  qapi/qapi-types-misc.h qapi/qapi-visit-qom.h qapi/qapi-types-qom.h \
  qapi/qapi-visit-authz.h qapi/qapi-visit-block-core.h \
- qapi/qapi-commands-ui.h \
- /home/Antonello/Desktop/qemu-AVR32/include/block/qdict.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qerror.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/iothread.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/guest-random.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/keyval.h
+ qapi/qapi-commands-ui.h /home/leroooy/QemuNXP/include/block/qdict.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qerror.h \
+ /home/leroooy/QemuNXP/include/sysemu/iothread.h \
+ /home/leroooy/QemuNXP/include/qemu/guest-random.h \
+ /home/leroooy/QemuNXP/include/qemu/keyval.h

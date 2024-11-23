@@ -1,11 +1,11 @@
-Build started at 2024-11-23T12:20:59.789307
+Build started at 2024-11-23T15:57:37.729139
 Main binary: /usr/bin/python3
 Build Options: -Dwerror=true -Dvfio_user_server=disabled -Dprefix=/usr/local -Dwrap_mode=nodownload --native-file=config-meson.cross
 Python system: Linux
 The Meson build system
 Version: 1.3.2
-Source dir: /home/Antonello/Desktop/qemu-AVR32
-Build dir: /home/Antonello/Desktop/qemu-AVR32/build
+Source dir: /home/leroooy/QemuNXP
+Build dir: /home/leroooy/QemuNXP/build
 Build type: native build
 Project name: qemu
 Project version: 8.0.50
@@ -22,15 +22,15 @@ Running command: cc -m64 -mcx16 -E -dM -
 -----------
 Detecting linker via: `cc -m64 -mcx16 -Wl,--version` -> 0
 stdout:
-GNU ld (GNU Binutils for Ubuntu) 2.42
+ld di GNU (GNU Binutils for Ubuntu) 2.42
 Copyright (C) 2024 Free Software Foundation, Inc.
-This program is free software; you may redistribute it under the terms of
-the GNU General Public License version 3 or (at your option) a later version.
-This program has absolutely no warranty.
+Questo programma è software libero; siete liberi di ridistribuirlo secondo i termini
+della GNU General Public License versione 3 o (a scelta) una versione più recente.
+Questo programma non ha assolutamente alcuna garanzia.
 -----------
 stderr:
 collect2 version 13.2.0
-/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1aK7l6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLhrzAt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
 -----------
 Sanity testing C compiler: cc -m64 -mcx16
 Is cross compiler: False.
@@ -41,7 +41,7 @@ Sanity check compile stdout:
 Sanity check compile stderr:
 
 -----
-Running test binary command:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/sanitycheckc.exe
+Running test binary command:  /home/leroooy/QemuNXP/build/meson-private/sanitycheckc.exe
 C compiler for the host machine: cc -m64 -mcx16 (gcc 13.2.0 "cc (Ubuntu 13.2.0-23ubuntu4) 13.2.0")
 C linker for the host machine: cc -m64 -mcx16 ld.bfd 2.42
 -----------
@@ -49,9 +49,9 @@ Detecting archiver via: `ar --version` -> 0
 stdout:
 GNU ar (GNU Binutils for Ubuntu) 2.42
 Copyright (C) 2024 Free Software Foundation, Inc.
-This program is free software; you may redistribute it under the terms of
-the GNU General Public License version 3 or (at your option) any later version.
-This program has absolutely no warranty.
+Questo programma è software libero; potete redistribuirlo secondo i termini della
+GNU General Public License versione 3 o (a vostra scelta) qualsiasi versione successiva.
+Questo programma non ha assolutamente alcuna garanzia.
 -----------
 -----------
 Detecting compiler via: `cc -m64 -mcx16 --version` -> 0
@@ -66,15 +66,15 @@ Running command: cc -m64 -mcx16 -E -dM -
 -----------
 Detecting linker via: `cc -m64 -mcx16 -Wl,--version` -> 0
 stdout:
-GNU ld (GNU Binutils for Ubuntu) 2.42
+ld di GNU (GNU Binutils for Ubuntu) 2.42
 Copyright (C) 2024 Free Software Foundation, Inc.
-This program is free software; you may redistribute it under the terms of
-the GNU General Public License version 3 or (at your option) a later version.
-This program has absolutely no warranty.
+Questo programma è software libero; siete liberi di ridistribuirlo secondo i termini
+della GNU General Public License versione 3 o (a scelta) una versione più recente.
+Questo programma non ha assolutamente alcuna garanzia.
 -----------
 stderr:
 collect2 version 13.2.0
-/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cctegsak.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBEyAM8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
 -----------
 Sanity testing C compiler: cc -m64 -mcx16
 Is cross compiler: False.
@@ -85,7 +85,7 @@ Sanity check compile stdout:
 Sanity check compile stderr:
 
 -----
-Running test binary command:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/sanitycheckc.exe
+Running test binary command:  /home/leroooy/QemuNXP/build/meson-private/sanitycheckc.exe
 C compiler for the build machine: cc -m64 -mcx16 (gcc 13.2.0 "cc (Ubuntu 13.2.0-23ubuntu4) 13.2.0")
 C linker for the build machine: cc -m64 -mcx16 ld.bfd 2.42
 -----------
@@ -93,9 +93,9 @@ Detecting archiver via: `ar --version` -> 0
 stdout:
 GNU ar (GNU Binutils for Ubuntu) 2.42
 Copyright (C) 2024 Free Software Foundation, Inc.
-This program is free software; you may redistribute it under the terms of
-the GNU General Public License version 3 or (at your option) any later version.
-This program has absolutely no warranty.
+Questo programma è software libero; potete redistribuirlo secondo i termini della
+GNU General Public License versione 3 o (a vostra scelta) qualsiasi versione successiva.
+Questo programma non ha assolutamente alcuna garanzia.
 -----------
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
@@ -103,7 +103,7 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Target machine cpu family: x86_64
 Target machine cpu: x86_64
-Program scripts/symlink-install-tree.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/symlink-install-tree.py)
+Program scripts/symlink-install-tree.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/scripts/symlink-install-tree.py)
 Program sh found: YES (/usr/bin/sh)
 -----------
 Detecting compiler via: `c++ -m64 -mcx16 --version` -> 0
@@ -118,15 +118,15 @@ Running command: c++ -m64 -mcx16 -E -dM -
 -----------
 Detecting linker via: `c++ -m64 -mcx16 -Wl,--version` -> 0
 stdout:
-GNU ld (GNU Binutils for Ubuntu) 2.42
+ld di GNU (GNU Binutils for Ubuntu) 2.42
 Copyright (C) 2024 Free Software Foundation, Inc.
-This program is free software; you may redistribute it under the terms of
-the GNU General Public License version 3 or (at your option) a later version.
-This program has absolutely no warranty.
+Questo programma è software libero; siete liberi di ridistribuirlo secondo i termini
+della GNU General Public License versione 3 o (a scelta) una versione più recente.
+Questo programma non ha assolutamente alcuna garanzia.
 -----------
 stderr:
 collect2 version 13.2.0
-/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8YSEbw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. --version -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cchnGKHX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. --version -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
 -----------
 Sanity testing C++ compiler: c++ -m64 -mcx16
 Is cross compiler: False.
@@ -137,79 +137,79 @@ Sanity check compile stdout:
 Sanity check compile stderr:
 
 -----
-Running test binary command:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/sanitycheckcpp.exe
+Running test binary command:  /home/leroooy/QemuNXP/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: c++ -m64 -mcx16 (gcc 13.2.0 "c++ (Ubuntu 13.2.0-23ubuntu4) 13.2.0")
 C++ linker for the host machine: c++ -m64 -mcx16 ld.bfd 2.42
 Program python3 found: YES (/usr/bin/python3)
 Program iasl found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp98ah_d1c
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpvcdecbio
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp98ah_d1c/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp98ah_d1c/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-z,relro` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpvcdecbio/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpvcdecbio/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-z,relro` -> 0
 Compiler for C supports link arguments -Wl,-z,relro: YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7ktwe2di
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp8zc0jfem
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7ktwe2di/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7ktwe2di/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-z,now` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp8zc0jfem/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp8zc0jfem/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-z,now` -> 0
 Compiler for C supports link arguments -Wl,-z,now: YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsddissdd
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpohrrq_ha
 Code:
  int main(void) {}
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/main.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsddissdd/output.obj -c -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/main.c -o /home/leroooy/QemuNXP/build/meson-private/tmpohrrq_ha/output.obj -c -D_FILE_OFFSET_BITS=64 -O0` -> 0
 Running compile:
-Working directory:  /tmp/tmptcwp6mp6
+Working directory:  /tmp/tmpydo61_s9
 Code:
  int i = static_cast<int>(0);
 -----------
-Command line: `c++ -m64 -mcx16 /tmp/tmptcwp6mp6/testfile.cpp -o /tmp/tmptcwp6mp6/output.obj -D_FILE_OFFSET_BITS=64 -c -std=gnu++11` -> 0
+Command line: `c++ -m64 -mcx16 /tmp/tmpydo61_s9/testfile.cpp -o /tmp/tmpydo61_s9/output.obj -D_FILE_OFFSET_BITS=64 -c -std=gnu++11` -> 0
 Compiler accepts -std=gnu++11: YES
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpehgwb5o7
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpn0s95ts2
 Code:
  <binary>
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsddissdd/output.obj -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpehgwb5o7/output.exe -O0 -fpermissive -std=gnu++11 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -Wundef -Wwrite-strings -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wmissing-format-attribute -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong` -> 0
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpohrrq_ha/output.obj -o /home/leroooy/QemuNXP/build/meson-private/tmpn0s95ts2/output.exe -O0 -fpermissive -std=gnu++11 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -Wundef -Wwrite-strings -Wmissing-prototypes -Wstrict-prototypes -Wredundant-decls -Wold-style-declaration -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wimplicit-fallthrough=2 -Wmissing-format-attribute -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-psabi -fstack-protector-strong` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1t1uiiip
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmplaist5_3
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1t1uiiip/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1t1uiiip/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--fatal-warnings -Wl,--warn-common` -> 0
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmplaist5_3/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmplaist5_3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--fatal-warnings -Wl,--warn-common` -> 0
 Compiler for C++ supports link arguments -Wl,--warn-common: YES 
 Program cgcc found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpulv4vzz0
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpyr7owt2f
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpulv4vzz0/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpulv4vzz0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpyr7owt2f/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpyr7owt2f/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
 Library m found: YES
 Run-time dependency threads found: YES
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwnyb_hzq
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpfoucnxh8
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwnyb_hzq/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwnyb_hzq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lutil -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpfoucnxh8/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpfoucnxh8/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lutil -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
 Library util found: YES
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpuhm3hvhw
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpy1hou4ry
 Code:
  int main(void) { return 0; }
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpuhm3hvhw/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpuhm3hvhw/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Hypervisor` -> 1
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpy1hou4ry/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmpy1hou4ry/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Hypervisor` -> 1
 stderr:
 c++: error: unrecognized command-line option '-framework'
 -----------
@@ -247,7 +247,7 @@ stdout:
 -lgio-2.0 -lgobject-2.0 -lglib-2.0
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp8gav11fg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpll_ly17q
 Code:
  
         #include<stddef.h>
@@ -257,7 +257,7 @@ Code:
             return 0;
         }
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp8gav11fg/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp8gav11fg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive` -> 0
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpll_ly17q/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmpll_ly17q/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive` -> 0
 Program stdout:
 
 8
@@ -266,11 +266,11 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2n0dw88t
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpfig08pws
 Code:
  
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2n0dw88t/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2n0dw88t/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs` -> 0
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpfig08pws/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmpfig08pws/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs` -> 0
 stdout:
 install: /usr/lib/gcc/x86_64-linux-gnu/13/
 programs: =/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/
@@ -278,7 +278,7 @@ libraries: =/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/.
 -----------
 Run-time dependency gio-2.0 found: YES 2.80.0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5k17eldh
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpcv42kq0l
 Code:
  
     #include <gio/gio.h>
@@ -288,7 +288,7 @@ Code:
       return 0;
     }
 -----------
-Command line: `cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5k17eldh/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5k17eldh/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lgmodule-2.0 -lglib-2.0 /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so -Wl,--end-group` -> 0
+Command line: `cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid /home/leroooy/QemuNXP/build/meson-private/tmpcv42kq0l/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpcv42kq0l/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lgmodule-2.0 -lglib-2.0 /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so -Wl,--end-group` -> 0
 env[PKG_CONFIG_PATH]: 
 env[PKG_CONFIG]: /usr/bin/pkg-config
 -----------
@@ -389,7 +389,7 @@ stdout:
 -----------
 Run-time dependency zlib found: YES 1.3
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7folblbh
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpsojvx79v
 Code:
  
         #ifdef __has_include
@@ -400,9 +400,9 @@ Code:
          #include <libaio.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7folblbh/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpsojvx79v/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7folblbh/testfile.c:4:12: error: #error "Header 'libaio.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpsojvx79v/testfile.c:4:12: error: #error "Header 'libaio.h' could not be found"
     4 |           #error "Header 'libaio.h' could not be found"
       |            ^~~~~
 -----------
@@ -420,7 +420,7 @@ Package 'liburing', required by 'virtual:world', not found
 -----------
 Run-time dependency liburing found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpe5ujqgfi
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpimg6hc64
 Code:
  
   #include <liburing.h>
@@ -428,9 +428,9 @@ Code:
 
   int main(void) { return 0; }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpe5ujqgfi/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpe5ujqgfi/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpimg6hc64/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpimg6hc64/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpe5ujqgfi/testfile.c:2:12: fatal error: liburing.h: No such file or directory
+/home/leroooy/QemuNXP/build/meson-private/tmpimg6hc64/testfile.c:2:12: fatal error: liburing.h: No such file or directory
     2 |   #include <liburing.h>
       |            ^~~~~~~~~~~~
 compilation terminated.
@@ -448,7 +448,7 @@ Package 'libnfs', required by 'virtual:world', not found
 -----------
 Run-time dependency libnfs found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmp2pnl8a
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpwfw0ofw5
 Code:
  
   #include <stddef.h>
@@ -460,32 +460,32 @@ Code:
   #endif
   int main(void) { getxattr(NULL, NULL, NULL, 0); setxattr(NULL, NULL, NULL, 0, 0); return 0; }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmp2pnl8a/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmp2pnl8a/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpwfw0ofw5/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpwfw0ofw5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdk6itl2a
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp1j11rwac
 Code:
  int main(void) { return 0; }
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdk6itl2a/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdk6itl2a/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Cocoa` -> 1
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp1j11rwac/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmp1j11rwac/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework Cocoa` -> 1
 stderr:
 c++: error: unrecognized command-line option '-framework'
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7q110d0j
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp6d_7hqdr
 Code:
  int main(void) { return 0; }
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7q110d0j/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7q110d0j/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework CoreVideo` -> 1
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp6d_7hqdr/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmp6d_7hqdr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework CoreVideo` -> 1
 stderr:
 c++: error: unrecognized command-line option '-framework'
 -----------
 Run-time dependency appleframeworks found: NO (tried framework)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpik9_c4af
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp1scc693z
 Code:
  int main(void) { return 0; }
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpik9_c4af/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpik9_c4af/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework vmnet` -> 1
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp1scc693z/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmp1scc693z/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -framework vmnet` -> 1
 stderr:
 c++: error: unrecognized command-line option '-framework'
 -----------
@@ -503,7 +503,7 @@ Package 'libseccomp', required by 'virtual:world', not found
 -----------
 Run-time dependency libseccomp found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa6afu96l
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpu0yq59xe
 Code:
  
         #ifdef __has_include
@@ -514,9 +514,9 @@ Code:
          #include <cap-ng.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa6afu96l/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpu0yq59xe/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa6afu96l/testfile.c:4:12: error: #error "Header 'cap-ng.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpu0yq59xe/testfile.c:4:12: error: #error "Header 'cap-ng.h' could not be found"
     4 |           #error "Header 'cap-ng.h' could not be found"
       |            ^~~~~
 -----------
@@ -546,7 +546,7 @@ Package 'slirp', required by 'virtual:world', not found
 -----------
 Run-time dependency slirp found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpj_wm7kof
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp6aumyp25
 Code:
  
         #ifdef __has_include
@@ -557,9 +557,9 @@ Code:
          #include <libvdeplug.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpj_wm7kof/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp6aumyp25/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpj_wm7kof/testfile.c:4:12: error: #error "Header 'libvdeplug.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmp6aumyp25/testfile.c:4:12: error: #error "Header 'libvdeplug.h' could not be found"
     4 |           #error "Header 'libvdeplug.h' could not be found"
       |            ^~~~~
 -----------
@@ -637,12 +637,12 @@ Package 'spice-server', required by 'virtual:world', not found
 -----------
 Run-time dependency spice-server found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp09__1lmh
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpmwmxdw33
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp09__1lmh/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp09__1lmh/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpmwmxdw33/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpmwmxdw33/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
 Library rt found: YES
 Determining dependency 'libiscsi' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -717,18 +717,18 @@ Package 'libudev', required by 'virtual:world', not found
 -----------
 Run-time dependency libudev found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1t8dat7w
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpzpogv0eh
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1t8dat7w/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1t8dat7w/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lmpathpersist -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpzpogv0eh/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpzpogv0eh/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lmpathpersist -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lmpathpersist: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1bi1o2po
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpv65lol2q
 Code:
  
         #include<stddef.h>
@@ -738,7 +738,7 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1bi1o2po/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1bi1o2po/output.exe -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpv65lol2q/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpv65lol2q/output.exe -D_FILE_OFFSET_BITS=64 -O0` -> 0
 Program stdout:
 
 8
@@ -747,11 +747,11 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7e3924w2
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp86_vxo63
 Code:
  
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7e3924w2/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7e3924w2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp86_vxo63/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp86_vxo63/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
 stdout:
 install: /usr/lib/gcc/x86_64-linux-gnu/13/
 programs: =/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/
@@ -762,55 +762,56 @@ Determining dependency 'ncursesw' with pkg-config executable '/usr/bin/pkg-confi
 env[PKG_CONFIG_PATH]: 
 env[PKG_CONFIG]: /usr/bin/pkg-config
 -----------
-Called: `/usr/bin/pkg-config --modversion ncursesw` -> 1
-stderr:
-Package ncursesw was not found in the pkg-config search path.
-Perhaps you should add the directory containing `ncursesw.pc'
-to the PKG_CONFIG_PATH environment variable
-Package 'ncursesw', required by 'virtual:world', not found
+Called: `/usr/bin/pkg-config --modversion ncursesw` -> 0
+stdout:
+6.4.20240113
 -----------
-Run-time dependency ncursesw found: NO (tried pkgconfig)
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags ncursesw` -> 0
+stdout:
+-D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs ncursesw` -> 0
+stdout:
+-L/usr/lib/x86_64-linux-gnu -lncursesw -ltinfo
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs ncursesw` -> 0
+stdout:
+-lncursesw -ltinfo
+-----------
+Run-time dependency ncursesw found: YES 6.4.20240113
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppqeqrhji
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp8wpe5ocj
 Code:
  
-        #ifdef __has_include
-         #if !__has_include("curses.h")
-          #error "Header 'curses.h' could not be found"
-         #endif
-        #else
-         #include <curses.h>
-        #endif
+    #if defined(__APPLE__) || defined(__OpenBSD__)
+    #define _XOPEN_SOURCE_EXTENDED 1
+    #endif
+    #include <locale.h>
+    #include <curses.h>
+    #include <wchar.h>
+    int main(void) {
+      wchar_t wch = L'w';
+      setlocale(LC_ALL, "");
+      resize_term(0, 0);
+      addwstr(L"wide chars\n");
+      addnwstr(&wch, 1);
+      add_wch(WACS_DEGREE);
+      return 0;
+    }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppqeqrhji/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 -DNCURSES_WIDECHAR=1` -> 1
-stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppqeqrhji/testfile.c:4:12: error: #error "Header 'curses.h' could not be found"
-    4 |           #error "Header 'curses.h' could not be found"
-      |            ^~~~~
------------
-Has header "curses.h" : NO 
-Message: Trying with /usr/include/ncursesw
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp8wpe5ocj/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp8wpe5ocj/output.exe -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DNCURSES_WIDECHAR=1 -Wl,--start-group /usr/lib/x86_64-linux-gnu/libncursesw.so /usr/lib/x86_64-linux-gnu/libtinfo.so -Wl,--end-group` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5d0menbh
-Code:
- 
-        #ifdef __has_include
-         #if !__has_include("curses.h")
-          #error "Header 'curses.h' could not be found"
-         #endif
-        #else
-         #include <curses.h>
-        #endif
------------
-Command line: `cc -m64 -mcx16 -I/usr/include/ncursesw /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5d0menbh/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 -DNCURSES_WIDECHAR=1` -> 1
-stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5d0menbh/testfile.c:4:12: error: #error "Header 'curses.h' could not be found"
-    4 |           #error "Header 'curses.h' could not be found"
-      |            ^~~~~
------------
-Has header "curses.h" : NO 
-Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1olwp4j1
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp4e22yxpm
 Code:
  
         #include <iconv.h>
@@ -819,13 +820,13 @@ Code:
           return conv != (iconv_t) -1;
         }
 -----------
-Command line: `cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1olwp4j1/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1olwp4j1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -pthread -Wl,--start-group -lgmodule-2.0 -lglib-2.0 -liconv -Wl,--end-group` -> 1
+Command line: `cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include /home/leroooy/QemuNXP/build/meson-private/tmp4e22yxpm/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp4e22yxpm/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -pthread -Wl,--start-group -lgmodule-2.0 -lglib-2.0 -liconv -Wl,--end-group` -> 1
 stderr:
 /usr/bin/ld: cannot find -liconv: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3hwpicp8
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpb4dz0_n1
 Code:
  
         #include <iconv.h>
@@ -834,9 +835,9 @@ Code:
           return conv != (iconv_t) -1;
         }
 -----------
-Command line: `cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3hwpicp8/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3hwpicp8/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -pthread -Wl,--start-group -lgmodule-2.0 -lglib-2.0 -Wl,--end-group` -> 0
+Command line: `cc -m64 -mcx16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include /home/leroooy/QemuNXP/build/meson-private/tmpb4dz0_n1/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpb4dz0_n1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -pthread -Wl,--start-group -lgmodule-2.0 -lglib-2.0 -Wl,--end-group` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeq4j64ox
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpzo37itdq
 Code:
  
         #ifdef __has_include
@@ -847,9 +848,9 @@ Code:
          #include <brlapi.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeq4j64ox/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpzo37itdq/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeq4j64ox/testfile.c:4:12: error: #error "Header 'brlapi.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpzo37itdq/testfile.c:4:12: error: #error "Header 'brlapi.h' could not be found"
     4 |           #error "Header 'brlapi.h' could not be found"
       |            ^~~~~
 -----------
@@ -876,19 +877,19 @@ Found CMake: NO
 CMake binary for machine host machine not found. Giving up.
 Run-time dependency sdl2 found: NO (tried pkgconfig, config-tool and cmake)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmphtxwlecg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpb109xhpt
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmphtxwlecg/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmphtxwlecg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrados -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpb109xhpt/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpb109xhpt/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrados -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lrados: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library rados found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4mcxa_km
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp75qz6awt
 Code:
  
         #ifdef __has_include
@@ -899,9 +900,9 @@ Code:
          #include <rbd/librbd.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4mcxa_km/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp75qz6awt/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4mcxa_km/testfile.c:4:12: error: #error "Header 'rbd/librbd.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmp75qz6awt/testfile.c:4:12: error: #error "Header 'rbd/librbd.h' could not be found"
     4 |           #error "Header 'rbd/librbd.h' could not be found"
       |            ^~~~~
 -----------
@@ -931,7 +932,7 @@ Package 'libssh', required by 'virtual:world', not found
 -----------
 Run-time dependency libssh found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpncnkndjg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp7kj53oj4
 Code:
  
         #ifdef __has_include
@@ -942,15 +943,15 @@ Code:
          #include <bzlib.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpncnkndjg/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp7kj53oj4/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpncnkndjg/testfile.c:4:12: error: #error "Header 'bzlib.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmp7kj53oj4/testfile.c:4:12: error: #error "Header 'bzlib.h' could not be found"
     4 |           #error "Header 'bzlib.h' could not be found"
       |            ^~~~~
 -----------
 Has header "bzlib.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpt05h_e4e
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmplu4evkhc
 Code:
  
         #ifdef __has_include
@@ -961,15 +962,15 @@ Code:
          #include <lzfse.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpt05h_e4e/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmplu4evkhc/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpt05h_e4e/testfile.c:4:12: error: #error "Header 'lzfse.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmplu4evkhc/testfile.c:4:12: error: #error "Header 'lzfse.h' could not be found"
     4 |           #error "Header 'lzfse.h' could not be found"
       |            ^~~~~
 -----------
 Has header "lzfse.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_8taqxsu
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpq4y7mkot
 Code:
  
         #ifdef __has_include
@@ -980,7 +981,7 @@ Code:
          #include <sys/soundcard.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_8taqxsu/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpq4y7mkot/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
 Has header "sys/soundcard.h" : YES 
 Determining dependency 'epoxy' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -995,7 +996,7 @@ Package 'epoxy', required by 'virtual:world', not found
 -----------
 Run-time dependency epoxy found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppai3k1hi
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmptjwpp6a8
 Code:
  
         #ifdef __has_include
@@ -1006,9 +1007,9 @@ Code:
          #include <epoxy/egl.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppai3k1hi/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmptjwpp6a8/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppai3k1hi/testfile.c:4:12: error: #error "Header 'epoxy/egl.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmptjwpp6a8/testfile.c:4:12: error: #error "Header 'epoxy/egl.h' could not be found"
     4 |           #error "Header 'epoxy/egl.h' could not be found"
       |            ^~~~~
 -----------
@@ -1091,7 +1092,7 @@ Package 'libjpeg', required by 'virtual:world', not found
 -----------
 Run-time dependency libjpeg found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwkl9tk5k
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpdyf5396f
 Code:
  
         #ifdef __has_include
@@ -1102,15 +1103,15 @@ Code:
          #include <sasl/sasl.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwkl9tk5k/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpdyf5396f/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwkl9tk5k/testfile.c:4:12: error: #error "Header 'sasl/sasl.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpdyf5396f/testfile.c:4:12: error: #error "Header 'sasl/sasl.h' could not be found"
     4 |           #error "Header 'sasl/sasl.h' could not be found"
       |            ^~~~~
 -----------
 Has header "sasl/sasl.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps3paeowa
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpiqhlanrb
 Code:
  
         #ifdef __has_include
@@ -1121,15 +1122,15 @@ Code:
          #include <security/pam_appl.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps3paeowa/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpiqhlanrb/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps3paeowa/testfile.c:4:12: error: #error "Header 'security/pam_appl.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpiqhlanrb/testfile.c:4:12: error: #error "Header 'security/pam_appl.h' could not be found"
     4 |           #error "Header 'security/pam_appl.h' could not be found"
       |            ^~~~~
 -----------
 Has header "security/pam_appl.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsc3r4r8b
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpi00hcuqd
 Code:
  
         #ifdef __has_include
@@ -1140,15 +1141,15 @@ Code:
          #include <snappy-c.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsc3r4r8b/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpi00hcuqd/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsc3r4r8b/testfile.c:4:12: error: #error "Header 'snappy-c.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpi00hcuqd/testfile.c:4:12: error: #error "Header 'snappy-c.h' could not be found"
     4 |           #error "Header 'snappy-c.h' could not be found"
       |            ^~~~~
 -----------
 Has header "snappy-c.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpny5bf4em
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpjqv1kyq4
 Code:
  
         #ifdef __has_include
@@ -1159,15 +1160,15 @@ Code:
          #include <lzo/lzo1x.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpny5bf4em/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpjqv1kyq4/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpny5bf4em/testfile.c:4:12: error: #error "Header 'lzo/lzo1x.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpjqv1kyq4/testfile.c:4:12: error: #error "Header 'lzo/lzo1x.h' could not be found"
     4 |           #error "Header 'lzo/lzo1x.h' could not be found"
       |            ^~~~~
 -----------
 Has header "lzo/lzo1x.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplsr2rjgr
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp72151qxc
 Code:
  
         #ifdef __has_include
@@ -1178,27 +1179,27 @@ Code:
          #include <numa.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplsr2rjgr/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp72151qxc/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplsr2rjgr/testfile.c:4:12: error: #error "Header 'numa.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmp72151qxc/testfile.c:4:12: error: #error "Header 'numa.h' could not be found"
     4 |           #error "Header 'numa.h' could not be found"
       |            ^~~~~
 -----------
 Has header "numa.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpinzfbgpg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpm0t1v42a
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpinzfbgpg/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpinzfbgpg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libumad -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpm0t1v42a/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpm0t1v42a/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libumad -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -libumad: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library ibumad found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_k_fokma
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpnj4m0e32
 Code:
  
         #ifdef __has_include
@@ -1209,20 +1210,20 @@ Code:
          #include <rdma/rdma_cma.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_k_fokma/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpnj4m0e32/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_k_fokma/testfile.c:4:12: error: #error "Header 'rdma/rdma_cma.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpnj4m0e32/testfile.c:4:12: error: #error "Header 'rdma/rdma_cma.h' could not be found"
     4 |           #error "Header 'rdma/rdma_cma.h' could not be found"
       |            ^~~~~
 -----------
 Has header "rdma/rdma_cma.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_f5jwmbg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp8gvveg_x
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_f5jwmbg/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_f5jwmbg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libverbs -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp8gvveg_x/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp8gvveg_x/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -libverbs -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -libverbs: No such file or directory
 collect2: error: ld returned 1 exit status
@@ -1241,91 +1242,91 @@ Package 'xencontrol', required by 'virtual:world', not found
 -----------
 Run-time dependency xencontrol found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpgf8y64w1
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmphc0ne18r
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpgf8y64w1/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpgf8y64w1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenstore -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmphc0ne18r/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmphc0ne18r/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenstore -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lxenstore: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library xenstore found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4z33_c14
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpgmwdf6w4
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4z33_c14/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4z33_c14/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenctrl -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpgmwdf6w4/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpgmwdf6w4/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenctrl -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lxenctrl: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library xenctrl found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2mjpm9k
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp30rbra9b
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2mjpm9k/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2mjpm9k/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxendevicemodel -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp30rbra9b/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp30rbra9b/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxendevicemodel -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lxendevicemodel: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library xendevicemodel found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpch17l7ey
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpjh6pde_s
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpch17l7ey/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpch17l7ey/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenforeignmemory -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpjh6pde_s/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpjh6pde_s/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenforeignmemory -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lxenforeignmemory: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library xenforeignmemory found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5arh6a6x
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpco40jr64
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5arh6a6x/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5arh6a6x/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxengnttab -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpco40jr64/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpco40jr64/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxengnttab -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lxengnttab: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library xengnttab found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpls3objgl
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpk9mwsmsc
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpls3objgl/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpls3objgl/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenevtchn -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpk9mwsmsc/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpk9mwsmsc/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxenevtchn -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lxenevtchn: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library xenevtchn found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcobfbyp5
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpiztoxbeq
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcobfbyp5/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcobfbyp5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxentoolcore -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpiztoxbeq/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpiztoxbeq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lxentoolcore -Wl,--end-group -Wl,--allow-shlib-undefined` -> 1
 stderr:
 /usr/bin/ld: cannot find -lxentoolcore: No such file or directory
 collect2: error: ld returned 1 exit status
 -----------
 Library xentoolcore found: NO
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp20zzwsku
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpzojvoesg
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -1532,15 +1533,15 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp20zzwsku/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41100` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmpzojvoesg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41100` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:7:12: fatal error: xendevicemodel.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:7:12: fatal error: xendevicemodel.h: No such file or directory
     7 |   #include <xendevicemodel.h>
       |            ^~~~~~~~~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy8kufrg8
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpglacaj_h
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -1747,15 +1748,15 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy8kufrg8/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41000` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmpglacaj_h/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=41000` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:24:12: fatal error: xenforeignmemory.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:24:12: fatal error: xenforeignmemory.h: No such file or directory
    24 |   #include <xenforeignmemory.h>
       |            ^~~~~~~~~~~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi7hchzfh
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpshj42mu_
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -1962,15 +1963,15 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi7hchzfh/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40900` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmpshj42mu_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40900` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:39:12: fatal error: xendevicemodel.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:39:12: fatal error: xendevicemodel.h: No such file or directory
    39 |   #include <xendevicemodel.h>
       |            ^~~~~~~~~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpq3tbyo20
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp2yubt4na
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -2177,15 +2178,15 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpq3tbyo20/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40800` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmp2yubt4na/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40800` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:60:12: fatal error: xenctrl.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:60:12: fatal error: xenctrl.h: No such file or directory
    60 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpddeci2x5
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpnzdomgn4
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -2392,15 +2393,15 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpddeci2x5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40701` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmpnzdomgn4/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40701` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:105:12: fatal error: xenctrl.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:105:12: fatal error: xenctrl.h: No such file or directory
   105 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi2zxp2ph
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpi1zu15ch
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -2607,15 +2608,15 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi2zxp2ph/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40600` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmpi1zu15ch/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40600` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:142:12: fatal error: xenctrl.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:142:12: fatal error: xenctrl.h: No such file or directory
   142 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpvezsudai
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmptxo1n8x9
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -2822,15 +2823,15 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpvezsudai/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40500` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmptxo1n8x9/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40500` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:163:12: fatal error: xenctrl.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:163:12: fatal error: xenctrl.h: No such file or directory
   163 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_7ez6d5d
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpoytryj06
 Code:
  /* SPDX-License-Identifier: GPL-2.0-or-later */
 
@@ -3037,9 +3038,9 @@ Code:
 #endif
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_7ez6d5d/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40200` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/scripts/xen-detect.c -o /home/leroooy/QemuNXP/build/meson-private/tmpoytryj06/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -DCONFIG_XEN_CTRL_INTERFACE_VERSION=40200` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/scripts/xen-detect.c:183:12: fatal error: xenctrl.h: No such file or directory
+/home/leroooy/QemuNXP/scripts/xen-detect.c:183:12: fatal error: xenctrl.h: No such file or directory
   183 |   #include <xenctrl.h>
       |            ^~~~~~~~~~~
 compilation terminated.
@@ -3141,7 +3142,7 @@ Package 'libkeyutils', required by 'virtual:world', not found
 -----------
 Run-time dependency libkeyutils found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjqr0g21l
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp74uh1u0_
 Code:
  
         #define gettid meson_disable_define_of_gettid
@@ -3162,7 +3163,7 @@ Code:
           return gettid ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjqr0g21l/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjqr0g21l/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp74uh1u0_/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp74uh1u0_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "gettid" : YES 
 Determining dependency 'libselinux' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
@@ -3193,14 +3194,14 @@ stdout:
 -----------
 Run-time dependency libselinux found: YES 3.5
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpl2p0938_
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpafig5xhh
 Code:
  #include <malloc.h>
                 int main(void) { malloc_trim(0); return 0; }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpl2p0938_/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpl2p0938_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpafig5xhh/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpafig5xhh/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1s922oeb
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpjededm8_
 Code:
  
   #ifndef _GNU_SOURCE
@@ -3214,9 +3215,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1s922oeb/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1s922oeb/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpjededm8_/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpjededm8_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp52u8ua_i
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpif4526zz
 Code:
  
   #ifndef _GNU_SOURCE
@@ -3230,7 +3231,7 @@ Code:
     return statxbuf.stx_mnt_id;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp52u8ua_i/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp52u8ua_i/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpif4526zz/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpif4526zz/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Determining dependency 'fuse3' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
 env[PKG_CONFIG]: /usr/bin/pkg-config
@@ -3268,7 +3269,7 @@ Package 'libdw', required by 'virtual:world', not found
 -----------
 Run-time dependency libdw found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdi83rz8k
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpx_gbv7u1
 Code:
  
         #ifdef __has_include
@@ -3279,10 +3280,10 @@ Code:
          #include <sys/epoll.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdi83rz8k/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpx_gbv7u1/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
 Has header "sys/epoll.h" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjyvm4d9k
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpypcg8895
 Code:
  
         #ifdef __has_include
@@ -3293,10 +3294,10 @@ Code:
          #include <linux/magic.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjyvm4d9k/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpypcg8895/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
 Has header "linux/magic.h" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7une1vl_
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpjqpp8kub
 Code:
  
         #ifdef __has_include
@@ -3307,15 +3308,15 @@ Code:
          #include <valgrind/valgrind.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7une1vl_/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpjqpp8kub/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7une1vl_/testfile.c:4:12: error: #error "Header 'valgrind/valgrind.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpjqpp8kub/testfile.c:4:12: error: #error "Header 'valgrind/valgrind.h' could not be found"
     4 |           #error "Header 'valgrind/valgrind.h' could not be found"
       |            ^~~~~
 -----------
 Has header "valgrind/valgrind.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi9afptu_
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpssf3l55p
 Code:
  
         #ifdef __has_include
@@ -3326,10 +3327,10 @@ Code:
          #include <linux/btrfs.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi9afptu_/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpssf3l55p/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
 Has header "linux/btrfs.h" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwsypq10t
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp_nq47562
 Code:
  
         #ifdef __has_include
@@ -3340,15 +3341,15 @@ Code:
          #include <libdrm/drm.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwsypq10t/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp_nq47562/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwsypq10t/testfile.c:4:12: error: #error "Header 'libdrm/drm.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmp_nq47562/testfile.c:4:12: error: #error "Header 'libdrm/drm.h' could not be found"
     4 |           #error "Header 'libdrm/drm.h' could not be found"
       |            ^~~~~
 -----------
 Has header "libdrm/drm.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpww_betbm
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp178k233j
 Code:
  
         #ifdef __has_include
@@ -3359,10 +3360,10 @@ Code:
          #include <pty.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpww_betbm/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp178k233j/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
 Has header "pty.h" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpned52n72
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp80eijv9c
 Code:
  
         #ifdef __has_include
@@ -3373,15 +3374,15 @@ Code:
          #include <sys/disk.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpned52n72/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp80eijv9c/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpned52n72/testfile.c:4:12: error: #error "Header 'sys/disk.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmp80eijv9c/testfile.c:4:12: error: #error "Header 'sys/disk.h' could not be found"
     4 |           #error "Header 'sys/disk.h' could not be found"
       |            ^~~~~
 -----------
 Has header "sys/disk.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcvgjtx8v
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpkebbntnh
 Code:
  
         #ifdef __has_include
@@ -3392,15 +3393,15 @@ Code:
          #include <sys/ioccom.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcvgjtx8v/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpkebbntnh/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcvgjtx8v/testfile.c:4:12: error: #error "Header 'sys/ioccom.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpkebbntnh/testfile.c:4:12: error: #error "Header 'sys/ioccom.h' could not be found"
     4 |           #error "Header 'sys/ioccom.h' could not be found"
       |            ^~~~~
 -----------
 Has header "sys/ioccom.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpxx3mggg3
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpgq3uld15
 Code:
  
         #ifdef __has_include
@@ -3411,15 +3412,15 @@ Code:
          #include <sys/kcov.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpxx3mggg3/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpgq3uld15/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpxx3mggg3/testfile.c:4:12: error: #error "Header 'sys/kcov.h' could not be found"
+/home/leroooy/QemuNXP/build/meson-private/tmpgq3uld15/testfile.c:4:12: error: #error "Header 'sys/kcov.h' could not be found"
     4 |           #error "Header 'sys/kcov.h' could not be found"
       |            ^~~~~
 -----------
 Has header "sys/kcov.h" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpxxbbk7ef
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp5jbk2vgm
 Code:
  
         #define close_range meson_disable_define_of_close_range
@@ -3440,10 +3441,10 @@ Code:
           return close_range ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpxxbbk7ef/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpxxbbk7ef/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp5jbk2vgm/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp5jbk2vgm/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "close_range" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjjouhjnp
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpx1_qgtlq
 Code:
  
         #define accept4 meson_disable_define_of_accept4
@@ -3464,10 +3465,10 @@ Code:
           return accept4 ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjjouhjnp/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjjouhjnp/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpx1_qgtlq/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpx1_qgtlq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "accept4" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplqsmuknx
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp96ye5czi
 Code:
  
         #define clock_adjtime meson_disable_define_of_clock_adjtime
@@ -3488,10 +3489,10 @@ Code:
           return clock_adjtime ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplqsmuknx/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplqsmuknx/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp96ye5czi/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp96ye5czi/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "clock_adjtime" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyy10rj72
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpint47c7s
 Code:
  
         #define dup3 meson_disable_define_of_dup3
@@ -3512,10 +3513,10 @@ Code:
           return dup3 ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyy10rj72/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyy10rj72/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpint47c7s/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpint47c7s/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "dup3" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4e061hq5
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpp3tv70dy
 Code:
  
         #define fallocate meson_disable_define_of_fallocate
@@ -3536,10 +3537,10 @@ Code:
           return fallocate ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4e061hq5/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4e061hq5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpp3tv70dy/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpp3tv70dy/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "fallocate" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4lffjjkg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpvoax_1vk
 Code:
  
         #define posix_fallocate meson_disable_define_of_posix_fallocate
@@ -3560,10 +3561,10 @@ Code:
           return posix_fallocate ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4lffjjkg/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4lffjjkg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpvoax_1vk/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpvoax_1vk/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "posix_fallocate" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp8l9co_af
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpxt_wjfxn
 Code:
  #include <stdlib.h>
 #include <limits.h>
@@ -3578,10 +3579,10 @@ int main(void) {
             return (int) b;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp8l9co_af/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp8l9co_af/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpxt_wjfxn/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpxt_wjfxn/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "posix_memalign" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpf8fpyv9c
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp5g2e830e
 Code:
  
         #define _aligned_malloc meson_disable_define_of__aligned_malloc
@@ -3602,14 +3603,14 @@ Code:
           return _aligned_malloc ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpf8fpyv9c/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpf8fpyv9c/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp5g2e830e/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp5g2e830e/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/usr/bin/ld: /tmp/ccRkYcyp.o: in function `main':
+/usr/bin/ld: /tmp/ccTUzvVi.o: in function `main':
 testfile.c:(.text+0x9): undefined reference to `_aligned_malloc'
 collect2: error: ld returned 1 exit status
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpefuuo9sx
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpsxz6a63c
 Code:
  
         int main(void) {
@@ -3635,16 +3636,16 @@ Code:
         return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpefuuo9sx/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpefuuo9sx/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpsxz6a63c/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpsxz6a63c/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpefuuo9sx/testfile.c: In function 'main':
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpefuuo9sx/testfile.c:17:18: error: #error "__builtin__aligned_malloc not found"
+/home/leroooy/QemuNXP/build/meson-private/tmpsxz6a63c/testfile.c: In function 'main':
+/home/leroooy/QemuNXP/build/meson-private/tmpsxz6a63c/testfile.c:17:18: error: #error "__builtin__aligned_malloc not found"
    17 |                 #error "__builtin__aligned_malloc not found"
       |                  ^~~~~
 -----------
 Checking for function "_aligned_malloc" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5yylkbx2
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpnhw96os0
 Code:
  
         #define valloc meson_disable_define_of_valloc
@@ -3665,10 +3666,10 @@ Code:
           return valloc ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5yylkbx2/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5yylkbx2/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpnhw96os0/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpnhw96os0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "valloc" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi0568wx4
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpfakcv81y
 Code:
  
         #define memalign meson_disable_define_of_memalign
@@ -3689,10 +3690,10 @@ Code:
           return memalign ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi0568wx4/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi0568wx4/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpfakcv81y/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpfakcv81y/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "memalign" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpe68yzow_
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp4g78bbd2
 Code:
  
         #define ppoll meson_disable_define_of_ppoll
@@ -3713,10 +3714,10 @@ Code:
           return ppoll ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpe68yzow_/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpe68yzow_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp4g78bbd2/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp4g78bbd2/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "ppoll" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjsxlqa3_
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpb0537h7t
 Code:
  #include <sys/uio.h>
 #include <limits.h>
@@ -3731,10 +3732,10 @@ int main(void) {
             return (int) b;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjsxlqa3_/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjsxlqa3_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpb0537h7t/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpb0537h7t/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "preadv" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi269el_b
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpmsyqoq3l
 Code:
  
         #define pthread_fchdir_np meson_disable_define_of_pthread_fchdir_np
@@ -3755,14 +3756,14 @@ Code:
           return pthread_fchdir_np ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi269el_b/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpi269el_b/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpmsyqoq3l/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpmsyqoq3l/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/usr/bin/ld: /tmp/ccQAdbah.o: in function `main':
+/usr/bin/ld: /tmp/ccqiRwrl.o: in function `main':
 testfile.c:(.text+0x9): undefined reference to `pthread_fchdir_np'
 collect2: error: ld returned 1 exit status
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprogtmcwi
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpumy9lqwo
 Code:
  
         int main(void) {
@@ -3788,16 +3789,16 @@ Code:
         return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprogtmcwi/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprogtmcwi/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpumy9lqwo/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpumy9lqwo/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprogtmcwi/testfile.c: In function 'main':
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprogtmcwi/testfile.c:17:18: error: #error "__builtin_pthread_fchdir_np not found"
+/home/leroooy/QemuNXP/build/meson-private/tmpumy9lqwo/testfile.c: In function 'main':
+/home/leroooy/QemuNXP/build/meson-private/tmpumy9lqwo/testfile.c:17:18: error: #error "__builtin_pthread_fchdir_np not found"
    17 |                 #error "__builtin_pthread_fchdir_np not found"
       |                  ^~~~~
 -----------
 Checking for function "pthread_fchdir_np" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg9v0alkn
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpom4uqa5s
 Code:
  
         #define sendfile meson_disable_define_of_sendfile
@@ -3818,10 +3819,10 @@ Code:
           return sendfile ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg9v0alkn/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg9v0alkn/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpom4uqa5s/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpom4uqa5s/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "sendfile" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplo_42oqe
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpeir_a3fx
 Code:
  
         #define setns meson_disable_define_of_setns
@@ -3842,10 +3843,10 @@ Code:
           return setns ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplo_42oqe/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplo_42oqe/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpeir_a3fx/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpeir_a3fx/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "setns" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpbpsjs408
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmppveq4zej
 Code:
  
         #define unshare meson_disable_define_of_unshare
@@ -3866,10 +3867,10 @@ Code:
           return unshare ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpbpsjs408/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpbpsjs408/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmppveq4zej/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmppveq4zej/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "unshare" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2k6_hlho
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpr_ty6cs5
 Code:
  
         #define syncfs meson_disable_define_of_syncfs
@@ -3890,10 +3891,10 @@ Code:
           return syncfs ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2k6_hlho/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2k6_hlho/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpr_ty6cs5/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpr_ty6cs5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "syncfs" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp52aefbf7
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpfi1b8b__
 Code:
  
         #define sync_file_range meson_disable_define_of_sync_file_range
@@ -3914,10 +3915,10 @@ Code:
           return sync_file_range ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp52aefbf7/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp52aefbf7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpfi1b8b__/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpfi1b8b__/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "sync_file_range" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdgivfz5x
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpymlarnwo
 Code:
  
         #define timerfd_create meson_disable_define_of_timerfd_create
@@ -3938,10 +3939,10 @@ Code:
           return timerfd_create ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdgivfz5x/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdgivfz5x/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpymlarnwo/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpymlarnwo/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "timerfd_create" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmsiotnqi
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp5s8ea5zy
 Code:
  
         #define copy_file_range meson_disable_define_of_copy_file_range
@@ -3962,10 +3963,10 @@ Code:
           return copy_file_range ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmsiotnqi/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmsiotnqi/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp5s8ea5zy/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp5s8ea5zy/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "copy_file_range" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9r2i5jdg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpca5_aa0m
 Code:
  
         #define getifaddrs meson_disable_define_of_getifaddrs
@@ -3986,10 +3987,10 @@ Code:
           return getifaddrs ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9r2i5jdg/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9r2i5jdg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpca5_aa0m/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpca5_aa0m/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "getifaddrs" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpoog8uixv
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpaqgjcjwq
 Code:
  
         #define openpty meson_disable_define_of_openpty
@@ -4010,10 +4011,10 @@ Code:
           return openpty ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpoog8uixv/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpoog8uixv/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lutil -Wl,--end-group` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpaqgjcjwq/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpaqgjcjwq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lutil -Wl,--end-group` -> 0
 Checking for function "openpty" with dependency -lutil: YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpzfot9iin
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpbyf7hcq5
 Code:
  
         #define strchrnul meson_disable_define_of_strchrnul
@@ -4034,10 +4035,10 @@ Code:
           return strchrnul ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpzfot9iin/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpzfot9iin/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpbyf7hcq5/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpbyf7hcq5/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "strchrnul" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4clxe9yu
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp__gdn4fq
 Code:
  #include <stdlib.h>
 #include <limits.h>
@@ -4052,10 +4053,10 @@ int main(void) {
             return (int) b;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4clxe9yu/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4clxe9yu/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp__gdn4fq/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp__gdn4fq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "system" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1r9k47j4
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpjmrwvsy7
 Code:
  
         #include <sys/epoll.h>
@@ -4067,10 +4068,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1r9k47j4/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1r9k47j4/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpjmrwvsy7/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpjmrwvsy7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "sys/epoll.h" has symbol "epoll_create1" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpx60zspwz
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpljiefelt
 Code:
  
         #include <linux/falloc.h>
@@ -4082,10 +4083,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpx60zspwz/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpx60zspwz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpljiefelt/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpljiefelt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "linux/falloc.h" has symbol "FALLOC_FL_PUNCH_HOLE" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpf6w7ta78
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmplphecekr
 Code:
  
         #include <linux/falloc.h>
@@ -4097,10 +4098,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpf6w7ta78/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpf6w7ta78/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmplphecekr/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmplphecekr/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "linux/falloc.h" has symbol "FALLOC_FL_KEEP_SIZE" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplh3ekhdf
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpci_b05zv
 Code:
  
         #include <linux/falloc.h>
@@ -4112,10 +4113,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplh3ekhdf/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmplh3ekhdf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpci_b05zv/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpci_b05zv/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "linux/falloc.h" has symbol "FALLOC_FL_ZERO_RANGE" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp96kf3v27
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmprrplx7g8
 Code:
  
         #ifdef __has_include
@@ -4126,10 +4127,10 @@ Code:
          #include <linux/fiemap.h>
         #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp96kf3v27/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmprrplx7g8/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11` -> 0
 Has header "linux/fiemap.h" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpo7fux6ep
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpsu1o3t9j
 Code:
  
         #include <linux/fs.h>
@@ -4141,10 +4142,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpo7fux6ep/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpo7fux6ep/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpsu1o3t9j/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpsu1o3t9j/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "linux/fs.h" has symbol "FS_IOC_FIEMAP" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg_xs64ns
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpdij4sqqw
 Code:
  
         #define getrandom meson_disable_define_of_getrandom
@@ -4165,10 +4166,10 @@ Code:
           return getrandom ();
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg_xs64ns/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg_xs64ns/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpdij4sqqw/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpdij4sqqw/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for function "getrandom" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpw4bugu_i
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpv1nwbow2
 Code:
  
         #include <sys/random.h>
@@ -4180,10 +4181,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpw4bugu_i/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpw4bugu_i/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpv1nwbow2/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpv1nwbow2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "sys/random.h" has symbol "GRND_NONBLOCK" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppripvd4b
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp_ol_5jp_
 Code:
  
         #include <sys/inotify.h>
@@ -4195,10 +4196,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppripvd4b/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppripvd4b/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp_ol_5jp_/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp_ol_5jp_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "sys/inotify.h" has symbol "inotify_init" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpw0q0ado7
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpk71c49zz
 Code:
  
         #include <sys/inotify.h>
@@ -4210,10 +4211,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpw0q0ado7/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpw0q0ado7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpk71c49zz/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpk71c49zz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "sys/inotify.h" has symbol "inotify_init1" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqr1i6r2k
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpe9f1ih6z
 Code:
  
         #include <sys/prctl.h>
@@ -4225,10 +4226,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqr1i6r2k/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqr1i6r2k/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpe9f1ih6z/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpe9f1ih6z/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "sys/prctl.h" has symbol "PR_SET_TIMERSLACK" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3xmoqb9w
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpcp8ot1hh
 Code:
  
         #include <linux/rtnetlink.h>
@@ -4240,10 +4241,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3xmoqb9w/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3xmoqb9w/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpcp8ot1hh/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpcp8ot1hh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "linux/rtnetlink.h" has symbol "IFLA_PROTO_DOWN" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmptjo0eke1
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpsyh3i33u
 Code:
  
         #include <sys/sysmacros.h>
@@ -4255,10 +4256,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmptjo0eke1/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmptjo0eke1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpsyh3i33u/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpsyh3i33u/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "sys/sysmacros.h" has symbol "makedev" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa9q5_o41
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpyrdwf79g
 Code:
  
         #include <getopt.h>
@@ -4270,17 +4271,17 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa9q5_o41/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa9q5_o41/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpyrdwf79g/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpyrdwf79g/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa9q5_o41/testfile.c: In function 'main':
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa9q5_o41/testfile.c:6:17: error: 'optreset' undeclared (first use in this function)
+/home/leroooy/QemuNXP/build/meson-private/tmpyrdwf79g/testfile.c: In function 'main':
+/home/leroooy/QemuNXP/build/meson-private/tmpyrdwf79g/testfile.c:6:17: error: 'optreset' undeclared (first use in this function)
     6 |                 optreset;
       |                 ^~~~~~~~
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpa9q5_o41/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+/home/leroooy/QemuNXP/build/meson-private/tmpyrdwf79g/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
 -----------
 Header "getopt.h" has symbol "optreset" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyid9fsww
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpjkzjqwop
 Code:
  
         #include <netinet/in.h>
@@ -4292,10 +4293,10 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyid9fsww/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyid9fsww/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpjkzjqwop/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpjkzjqwop/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "netinet/in.h" has symbol "IPPROTO_MPTCP" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpag_gyx65
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpckq7yh6_
 Code:
  #include <signal.h>
         void bar(void) {
@@ -4304,16 +4305,16 @@ Code:
 
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpag_gyx65/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpag_gyx65/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpckq7yh6_/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpckq7yh6_/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpag_gyx65/testfile.c: In function 'bar':
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpag_gyx65/testfile.c:4:16: error: 'struct sigevent' has no member named 'sigev_notify_thread_id'
+/home/leroooy/QemuNXP/build/meson-private/tmpckq7yh6_/testfile.c: In function 'bar':
+/home/leroooy/QemuNXP/build/meson-private/tmpckq7yh6_/testfile.c:4:16: error: 'struct sigevent' has no member named 'sigev_notify_thread_id'
     4 |             foo.sigev_notify_thread_id;
       |                ^
 -----------
 Checking whether type "struct sigevent" has member "sigev_notify_thread_id" : NO 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5l3xdte7
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp3y8zt41x
 Code:
  #include <sys/stat.h>
         void bar(void) {
@@ -4322,38 +4323,38 @@ Code:
 
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5l3xdte7/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5l3xdte7/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp3y8zt41x/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp3y8zt41x/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking whether type "struct stat" has member "st_atim" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwi3nsvpt
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpqhwu45zk
 Code:
  #include <sys/uio.h>
         void bar(void) {
             sizeof(struct iovec);
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwi3nsvpt/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwi3nsvpt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpqhwu45zk/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpqhwu45zk/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for type "struct iovec" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyvarj3r3
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpi142zsgh
 Code:
  #include <utmpx.h>
         void bar(void) {
             sizeof(struct utmpx);
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyvarj3r3/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyvarj3r3/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpi142zsgh/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpi142zsgh/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for type "struct utmpx" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_6v6il87
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpdj8p157a
 Code:
  
   #include <sys/eventfd.h>
   int main(void) { return eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC); }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_6v6il87/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp_6v6il87/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpdj8p157a/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpdj8p157a/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpnz278p6z
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp4po9xonc
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4369,9 +4370,9 @@ Code:
   #endif
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpnz278p6z/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpnz278p6z/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp4po9xonc/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp4po9xonc/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy80gav2y
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpu6mi5w23
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4383,9 +4384,9 @@ Code:
   #include <stddef.h>
   int main(void) { return madvise(NULL, 0, MADV_DONTNEED); }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy80gav2y/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy80gav2y/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpu6mi5w23/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpu6mi5w23/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpurgg5wzg
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmptt0rj28c
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4398,18 +4399,18 @@ Code:
     extern int madvise(int);
     int main(void) { return madvise(0); }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpurgg5wzg/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpurgg5wzg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmptt0rj28c/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmptt0rj28c/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpurgg5wzg/testfile.c:9:16: error: conflicting types for 'madvise'; have 'int(int)'
+/home/leroooy/QemuNXP/build/meson-private/tmptt0rj28c/testfile.c:9:16: error: conflicting types for 'madvise'; have 'int(int)'
     9 |     extern int madvise(int);
       |                ^~~~~~~
-In file included from /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpurgg5wzg/testfile.c:7:
+In file included from /home/leroooy/QemuNXP/build/meson-private/tmptt0rj28c/testfile.c:7:
 /usr/include/x86_64-linux-gnu/sys/mman.h:94:12: note: previous declaration of 'madvise' with type 'int(void *, size_t,  int)' {aka 'int(void *, long unsigned int,  int)'}
    94 | extern int madvise (void *__addr, size_t __len, int __advice) __THROW;
       |            ^~~~~~~
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmphijc620z
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpdb0w8u90
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4419,9 +4420,9 @@ Code:
   #include <sys/mman.h>
   int main(void) { return memfd_create("foo", MFD_ALLOW_SEALING); }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmphijc620z/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmphijc620z/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpdb0w8u90/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpdb0w8u90/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7eiviepb
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpj3d6urjg
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4435,9 +4436,9 @@ Code:
   int main(void) { struct file_handle fh; return open_by_handle_at(0, &fh, 0); }
   #endif
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7eiviepb/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7eiviepb/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpj3d6urjg/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpj3d6urjg/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqa_w6bn6
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp8tzefmat
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4448,9 +4449,9 @@ Code:
   #include <stddef.h>
   int main(void) { return posix_madvise(NULL, 0, POSIX_MADV_DONTNEED); }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqa_w6bn6/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqa_w6bn6/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp8tzefmat/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp8tzefmat/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjponjuo7
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmprbmsu0x_
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4468,9 +4469,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjponjuo7/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpjponjuo7/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmprbmsu0x_/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmprbmsu0x_/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1kxdzdxy
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpy3yz5yn4
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4487,19 +4488,19 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1kxdzdxy/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1kxdzdxy/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpy3yz5yn4/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpy3yz5yn4/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1kxdzdxy/testfile.c: In function 'f':
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1kxdzdxy/testfile.c:8:48: warning: passing argument 1 of 'pthread_setname_np' makes integer from pointer without a cast [-Wint-conversion]
+/home/leroooy/QemuNXP/build/meson-private/tmpy3yz5yn4/testfile.c: In function 'f':
+/home/leroooy/QemuNXP/build/meson-private/tmpy3yz5yn4/testfile.c:8:48: warning: passing argument 1 of 'pthread_setname_np' makes integer from pointer without a cast [-Wint-conversion]
     8 |   static void *f(void *p) { pthread_setname_np("QEMU"); return NULL; }
       |                                                ^~~~~~
       |                                                |
       |                                                char *
-In file included from /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1kxdzdxy/testfile.c:6:
+In file included from /home/leroooy/QemuNXP/build/meson-private/tmpy3yz5yn4/testfile.c:6:
 /usr/include/pthread.h:463:42: note: expected 'pthread_t' {aka 'long unsigned int'} but argument is of type 'char *'
   463 | extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
       |                                ~~~~~~~~~~^~~~~~~~~~~~~~~
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp1kxdzdxy/testfile.c:8:29: error: too few arguments to function 'pthread_setname_np'
+/home/leroooy/QemuNXP/build/meson-private/tmpy3yz5yn4/testfile.c:8:29: error: too few arguments to function 'pthread_setname_np'
     8 |   static void *f(void *p) { pthread_setname_np("QEMU"); return NULL; }
       |                             ^~~~~~~~~~~~~~~~~~
 /usr/include/pthread.h:463:12: note: declared here
@@ -4507,7 +4508,7 @@ In file included from /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp
       |            ^~~~~~~~~~~~~~~~~~
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfppc0sx4
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpxcy8hgwb
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4526,15 +4527,15 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfppc0sx4/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfppc0sx4/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpxcy8hgwb/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpxcy8hgwb/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfppc0sx4/testfile.c:7:12: fatal error: pthread_np.h: No such file or directory
+/home/leroooy/QemuNXP/build/meson-private/tmpxcy8hgwb/testfile.c:7:12: fatal error: pthread_np.h: No such file or directory
     7 |   #include <pthread_np.h>
       |            ^~~~~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9ubxsgl4
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpmg58f_3g
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4552,19 +4553,19 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9ubxsgl4/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9ubxsgl4/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpmg58f_3g/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpmg58f_3g/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9ubxsgl4/testfile.c: In function 'main':
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9ubxsgl4/testfile.c:12:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pthread_condattr_init'
+/home/leroooy/QemuNXP/build/meson-private/tmpmg58f_3g/testfile.c: In function 'main':
+/home/leroooy/QemuNXP/build/meson-private/tmpmg58f_3g/testfile.c:12:5: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pthread_condattr_init'
    12 |     pthread_condattr_init(&attr);
       |     ^~~~~~~~~~~~~~~~~~~~~
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9ubxsgl4/testfile.c:12:28: error: 'attr' undeclared (first use in this function)
+/home/leroooy/QemuNXP/build/meson-private/tmpmg58f_3g/testfile.c:12:28: error: 'attr' undeclared (first use in this function)
    12 |     pthread_condattr_init(&attr);
       |                            ^~~~
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp9ubxsgl4/testfile.c:12:28: note: each undeclared identifier is reported only once for each function it appears in
+/home/leroooy/QemuNXP/build/meson-private/tmpmg58f_3g/testfile.c:12:28: note: each undeclared identifier is reported only once for each function it appears in
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5vtiv6ll
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp6lul9751
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4588,9 +4589,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5vtiv6ll/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp5vtiv6ll/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp6lul9751/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp6lul9751/output.exe -pthread -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprl5x_n_j
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp91ckbcfd
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4601,19 +4602,19 @@ Code:
   #include <stddef.h>
   int main(void) { return signalfd(-1, NULL, SFD_CLOEXEC); }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprl5x_n_j/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprl5x_n_j/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp91ckbcfd/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp91ckbcfd/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprl5x_n_j/testfile.c: In function 'main':
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprl5x_n_j/testfile.c:8:27: warning: argument 2 null where non-null expected [-Wnonnull]
+/home/leroooy/QemuNXP/build/meson-private/tmp91ckbcfd/testfile.c: In function 'main':
+/home/leroooy/QemuNXP/build/meson-private/tmp91ckbcfd/testfile.c:8:27: warning: argument 2 null where non-null expected [-Wnonnull]
     8 |   int main(void) { return signalfd(-1, NULL, SFD_CLOEXEC); }
       |                           ^~~~~~~~
-In file included from /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmprl5x_n_j/testfile.c:6:
+In file included from /home/leroooy/QemuNXP/build/meson-private/tmp91ckbcfd/testfile.c:6:
 /usr/include/x86_64-linux-gnu/sys/signalfd.h:57:12: note: in a call to function 'signalfd' declared 'nonnull'
    57 | extern int signalfd (int __fd, const sigset_t *__mask, int __flags)
       |            ^~~~~~~~
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4sudn0ib
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp80diskw3
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4632,9 +4633,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4sudn0ib/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp4sudn0ib/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp80diskw3/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp80diskw3/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy6y47h4g
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmptbhxygsf
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4646,9 +4647,9 @@ Code:
     return mlockall(MCL_FUTURE);
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy6y47h4g/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpy6y47h4g/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmptbhxygsf/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmptbhxygsf/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwkmhmw8c
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpuole08uf
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4661,10 +4662,10 @@ Code:
             sizeof(struct mmsghdr);
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwkmhmw8c/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpwkmhmw8c/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpuole08uf/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpuole08uf/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Checking for type "struct mmsghdr" : YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpgv5rxlb2
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpkqhsktei
 Code:
  
     #include <inttypes.h>
@@ -4676,15 +4677,15 @@ Code:
     #endif
     int main(void) { return 0; }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpgv5rxlb2/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpgv5rxlb2/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpkqhsktei/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpkqhsktei/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpgv5rxlb2/testfile.c:4:14: fatal error: net/netmap.h: No such file or directory
+/home/leroooy/QemuNXP/build/meson-private/tmpkqhsktei/testfile.c:4:14: fatal error: net/netmap.h: No such file or directory
     4 |     #include <net/netmap.h>
       |              ^~~~~~~~~~~~~~
 compilation terminated.
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqqkam513
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpfn8ncs_n
 Code:
  
   #include <linux/fs.h>
@@ -4693,9 +4694,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqqkam513/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpqqkam513/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpfn8ncs_n/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpfn8ncs_n/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpivs4idh1
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpn1sniku8
 Code:
  
     #include <stdint.h>
@@ -4704,9 +4705,9 @@ Code:
         return printf("%zu", SIZE_MAX);
     }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpivs4idh1/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpivs4idh1/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Werror` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpn1sniku8/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpn1sniku8/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Werror` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpt7jis5gq
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmphq35bdkh
 Code:
  
   #include <stdint.h>
@@ -4721,9 +4722,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpt7jis5gq/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpt7jis5gq/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmphq35bdkh/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmphq35bdkh/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcmv49k9k
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpsfcgvbxr
 Code:
  
   __int128_t a;
@@ -4735,9 +4736,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcmv49k9k/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpcmv49k9k/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpsfcgvbxr/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpsfcgvbxr/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsx13jf6v
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpuv_750ow
 Code:
  
   #include <stdint.h>
@@ -4752,9 +4753,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsx13jf6v/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsx13jf6v/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpuv_750ow/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpuv_750ow/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 1
 stderr:
-/usr/bin/ld: /tmp/ccHvsG0b.o: in function `main':
+/usr/bin/ld: /tmp/ccVXN2FZ.o: in function `main':
 testfile.c:(.text+0x49): undefined reference to `__atomic_load_16'
 /usr/bin/ld: testfile.c:(.text+0x73): undefined reference to `__atomic_store_16'
 /usr/bin/ld: testfile.c:(.text+0x9a): undefined reference to `__atomic_compare_exchange_16'
@@ -4763,7 +4764,7 @@ testfile.c:(.text+0x49): undefined reference to `__atomic_load_16'
 collect2: error: ld returned 1 exit status
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpm63hqb40
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpwrzbm9e_
 Code:
  
       int main(void)
@@ -4774,9 +4775,9 @@ Code:
       }
     
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpm63hqb40/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpm63hqb40/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpwrzbm9e_/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpwrzbm9e_/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyl8pfqh6
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmprlco14x0
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4788,9 +4789,9 @@ Code:
     return getauxval(AT_HWCAP) == 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyl8pfqh6/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpyl8pfqh6/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmprlco14x0/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmprlco14x0/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfu5biwug
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpy3hx1j0j
 Code:
  
     #include <errno.h>
@@ -4802,9 +4803,9 @@ Code:
         return syscall(__NR_keyctl, KEYCTL_READ, 0, NULL, NULL, 0);
     }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfu5biwug/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfu5biwug/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpy3hx1j0j/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpy3hx1j0j/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2e1w656w
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpruzms01p
 Code:
  
   #include <cpuid.h>
@@ -4823,9 +4824,9 @@ Code:
     return 0;
   }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2e1w656w/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp2e1w656w/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpruzms01p/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpruzms01p/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpkohnjko1
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpznuplmoj
 Code:
  
     #include <cpuid.h>
@@ -4837,9 +4838,9 @@ Code:
     int main(int argc, char *argv[]) { return bar(argv[argc - 1]); }
   
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpkohnjko1/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpkohnjko1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpznuplmoj/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpznuplmoj/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfg7cdcby
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpxkasn9n7
 Code:
  
     #include <cpuid.h>
@@ -4851,9 +4852,9 @@ Code:
     int main(int argc, char *argv[]) { return bar(argv[argc - 1]); }
   
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfg7cdcby/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpfg7cdcby/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpxkasn9n7/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpxkasn9n7/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdusl72kv
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmprvw0pjjo
 Code:
  
     #include <cpuid.h>
@@ -4866,9 +4867,9 @@ Code:
     int main(int argc, char *argv[]) { return bar(argv[0]); }
   
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdusl72kv/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpdusl72kv/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmprvw0pjjo/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmprvw0pjjo/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7owk33w9
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp2pjth8uz
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4885,9 +4886,9 @@ Code:
       return 0;
     }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7owk33w9/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp7owk33w9/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp2pjth8uz/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp2pjth8uz/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpomr8q4hc
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp3220hs8y
 Code:
  
   #ifndef _GNU_SOURCE
@@ -4905,9 +4906,9 @@ Code:
     }
   
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpomr8q4hc/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpomr8q4hc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp3220hs8y/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp3220hs8y/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmcbmt3nq
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp0qz6cm1t
 Code:
  #include <sys/socket.h>
         #include <linux/vm_sockets.h>
@@ -4919,12 +4920,12 @@ Code:
             return 0;
         }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmcbmt3nq/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpmcbmt3nq/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp0qz6cm1t/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp0qz6cm1t/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11` -> 0
 Header "linux/vm_sockets.h" has symbol "AF_VSOCK" : YES 
-Program scripts/minikconf.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/minikconf.py)
+Program scripts/minikconf.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/scripts/minikconf.py)
 Configuring nxp-softmmu-config-target.h using configuration
 Configuring nxp-softmmu-config-devices.mak with command
-Running command: /usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/minikconf.py --defconfig nxp-softmmu-config-devices.mak /home/Antonello/Desktop/qemu-AVR32/build/meson-private/nxp-softmmu-config-devices.mak.d /home/Antonello/Desktop/qemu-AVR32/configs/devices/nxp-softmmu/default.mak /home/Antonello/Desktop/qemu-AVR32/Kconfig CONFIG_TPM=y CONFIG_IVSHMEM=y CONFIG_VHOST_USER=y CONFIG_VHOST_VDPA=y CONFIG_VHOST_KERNEL=y CONFIG_LINUX=y CONFIG_MULTIPROCESS_ALLOWED=y CONFIG_TCG=y CONFIG_NXP=y
+Running command: /usr/bin/python3 /home/leroooy/QemuNXP/scripts/minikconf.py --defconfig nxp-softmmu-config-devices.mak /home/leroooy/QemuNXP/build/meson-private/nxp-softmmu-config-devices.mak.d /home/leroooy/QemuNXP/configs/devices/nxp-softmmu/default.mak /home/leroooy/QemuNXP/Kconfig CONFIG_TPM=y CONFIG_IVSHMEM=y CONFIG_VHOST_USER=y CONFIG_VHOST_VDPA=y CONFIG_VHOST_KERNEL=y CONFIG_LINUX=y CONFIG_MULTIPROCESS_ALLOWED=y CONFIG_TCG=y CONFIG_NXP=y
 --- stdout ---
 CONFIG_GENERIC_LOADER=y
 CONFIG_GUEST_LOADER=y
@@ -4934,9 +4935,9 @@ CONFIG_NXPEXP_MCU=y
 --- stderr ---
 
 
-Reading depfile: /home/Antonello/Desktop/qemu-AVR32/build/meson-private/nxp-softmmu-config-devices.mak.d
+Reading depfile: /home/leroooy/QemuNXP/build/meson-private/nxp-softmmu-config-devices.mak.d
 Configuring nxp-softmmu-config-devices.h using configuration
-Program scripts/make-config-poison.sh found: YES (/home/Antonello/Desktop/qemu-AVR32/scripts/make-config-poison.sh)
+Program scripts/make-config-poison.sh found: YES (/home/leroooy/QemuNXP/scripts/make-config-poison.sh)
 Determining dependency 'capstone' with pkg-config executable '/usr/bin/pkg-config'
 env[PKG_CONFIG_PATH]: 
 env[PKG_CONFIG]: /usr/bin/pkg-config
@@ -4950,27 +4951,27 @@ Package 'capstone', required by 'virtual:world', not found
 -----------
 Run-time dependency capstone found: NO (tried pkgconfig)
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3mtvx9mi
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpav6bg3ah
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3mtvx9mi/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp3mtvx9mi/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lfdt -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpav6bg3ah/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpav6bg3ah/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lfdt -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
 Library fdt found: YES
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppsjipu19
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp5w7isxj1
 Code:
  
        #include <libfdt.h>
        #include <libfdt_env.h>
        int main(void) { fdt_find_max_phandle(NULL, NULL); return 0; }
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppsjipu19/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmppsjipu19/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lfdt -Wl,--end-group` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp5w7isxj1/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp5w7isxj1/output.exe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu11 -Wl,--start-group -lfdt -Wl,--end-group` -> 0
 Configuring config-host.h using configuration
-Program scripts/hxtool found: YES (/home/Antonello/Desktop/qemu-AVR32/scripts/hxtool)
-Program scripts/shaderinclude.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/shaderinclude.py)
-Program scripts/qapi-gen.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/qapi-gen.py)
-Program scripts/qemu-version.sh found: YES (/home/Antonello/Desktop/qemu-AVR32/scripts/qemu-version.sh)
+Program scripts/hxtool found: YES (/home/leroooy/QemuNXP/scripts/hxtool)
+Program scripts/shaderinclude.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/scripts/shaderinclude.py)
+Program scripts/qapi-gen.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/scripts/qapi-gen.py)
+Program scripts/qemu-version.sh found: YES (/home/leroooy/QemuNXP/scripts/qemu-version.sh)
 
 Executing subproject libvhost-user 
 
@@ -4981,31 +4982,31 @@ C linker for the host machine: cc -m64 -mcx16 ld.bfd 2.42
 C compiler for the build machine: cc -m64 -mcx16 (gcc 13.2.0 "cc (Ubuntu 13.2.0-23ubuntu4) 13.2.0")
 C linker for the build machine: cc -m64 -mcx16 ld.bfd 2.42
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeox622he
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpakchz6f5
 Code:
  extern int i;
 int i;
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeox622he/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeox622he/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpakchz6f5/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpakchz6f5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare` -> 0
 Compiler for C supports arguments -Wsign-compare: YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg7l6iwrt
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp3ewk46r3
 Code:
  extern int i;
 int i;
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg7l6iwrt/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg7l6iwrt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp3ewk46r3/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp3ewk46r3/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement` -> 0
 Compiler for C supports arguments -Wdeclaration-after-statement: YES 
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2gub5nw
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpn0k1ulrj
 Code:
  extern int i;
 int i;
 
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2gub5nw/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2gub5nw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpn0k1ulrj/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpn0k1ulrj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing` -> 0
 Compiler for C supports arguments -Wstrict-aliasing: YES 
 Dependency threads found: YES unknown (cached)
 Dependency glib-2.0 found: YES 2.80.0 (overridden)
@@ -5022,7 +5023,7 @@ C linker for the host machine: cc -m64 -mcx16 ld.bfd 2.42
 C compiler for the build machine: cc -m64 -mcx16 (gcc 13.2.0 "cc (Ubuntu 13.2.0-23ubuntu4) 13.2.0")
 C linker for the build machine: cc -m64 -mcx16 ld.bfd 2.42
 Using cached compile:
-Cached command line:  cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeox622he/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpeox622he/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare 
+Cached command line:  cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpakchz6f5/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpakchz6f5/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare 
 
 Code:
  extern int i;
@@ -5034,7 +5035,7 @@ Cached compiler stderr:
  
 Compiler for C supports arguments -Wsign-compare: YES (cached)
 Using cached compile:
-Cached command line:  cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg7l6iwrt/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpg7l6iwrt/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
+Cached command line:  cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp3ewk46r3/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp3ewk46r3/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
 
 Code:
  extern int i;
@@ -5046,7 +5047,7 @@ Cached compiler stderr:
  
 Compiler for C supports arguments -Wdeclaration-after-statement: YES (cached)
 Using cached compile:
-Cached command line:  cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2gub5nw/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmps2gub5nw/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing 
+Cached command line:  cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpn0k1ulrj/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmpn0k1ulrj/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing 
 
 Code:
  extern int i;
@@ -5060,14 +5061,14 @@ Compiler for C supports arguments -Wstrict-aliasing: YES (cached)
 Build targets in project: 10
 Subproject libvduse finished.
 
-Program scripts/decodetree.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/decodetree.py)
-Program ../scripts/modules/module_block.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/block/../scripts/modules/module_block.py)
-Program ../scripts/block-coroutine-wrapper.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/block/../scripts/block-coroutine-wrapper.py)
-Program scripts/modinfo-collect.py found: YES (/home/Antonello/Desktop/qemu-AVR32/scripts/modinfo-collect.py)
-Program scripts/modinfo-generate.py found: YES (/home/Antonello/Desktop/qemu-AVR32/scripts/modinfo-generate.py)
+Program scripts/decodetree.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/scripts/decodetree.py)
+Program ../scripts/modules/module_block.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/block/../scripts/modules/module_block.py)
+Program ../scripts/block-coroutine-wrapper.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/block/../scripts/block-coroutine-wrapper.py)
+Program scripts/modinfo-collect.py found: YES (/home/leroooy/QemuNXP/scripts/modinfo-collect.py)
+Program scripts/modinfo-generate.py found: YES (/home/leroooy/QemuNXP/scripts/modinfo-generate.py)
 Program nm found: YES
-Program scripts/undefsym.py found: YES (/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/undefsym.py)
-Program scripts/feature_to_c.sh found: YES (/bin/sh /home/Antonello/Desktop/qemu-AVR32/scripts/feature_to_c.sh)
+Program scripts/undefsym.py found: YES (/usr/bin/python3 /home/leroooy/QemuNXP/scripts/undefsym.py)
+Program scripts/feature_to_c.sh found: YES (/bin/sh /home/leroooy/QemuNXP/scripts/feature_to_c.sh)
 Program qemu-keymap found: NO
 Program sphinx-build found: NO
 Adding benchmark "benchmark-crypto-hash"
@@ -5076,18 +5077,18 @@ Adding benchmark "benchmark-crypto-cipher"
 Adding benchmark "benchmark-crypto-akcipher"
 Running command: /usr/bin/bash --version
 --- stdout ---
-GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)
+GNU bash, versione 5.2.21(1)-release (x86_64-pc-linux-gnu)
 Copyright (C) 2022 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+Licenza GPLv3+: GNU GPL versione 3 o successiva <http://gnu.org/licenses/gpl.html>
 
-This is free software; you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
+Questo è software libero; sei libero di cambiare e ridistribuirlo.
+NON esiste alcuna GARANZIA, nella misura consentita dalla legge.
 
 --- stderr ---
 
 
 Program bash found: YES 5.2.21 5.2.21 (/usr/bin/bash)
-Running command: /usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/tests/qemu-iotests/check -tap -qcow2 -g auto -n
+Running command: /usr/bin/python3 /home/leroooy/QemuNXP/tests/qemu-iotests/check -tap -qcow2 -g auto -n
 --- stdout ---
 001
 002
@@ -5349,7 +5350,7 @@ Adding test "io-qcow2-nbd-qemu-allocation"
 Adding test "io-qcow2-qemu-img-close-errors"
 Adding test "io-qcow2-qsd-jobs"
 Adding test "io-qcow2-regression-vhdx-log"
-Running command: /usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/tests/qemu-iotests/check -tap -raw -n
+Running command: /usr/bin/python3 /home/leroooy/QemuNXP/tests/qemu-iotests/check -tap -raw -n
 --- stdout ---
 001
 002
@@ -5987,7 +5988,7 @@ Adding test "io-raw-remove-bitmap-from-backing"
 Adding test "io-raw-reopen-file"
 Adding test "io-raw-stream-error-on-reset"
 Adding test "io-raw-stream-under-throttle"
-Running command: /usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/tests/qemu-iotests/check -tap -qed -n
+Running command: /usr/bin/python3 /home/leroooy/QemuNXP/tests/qemu-iotests/check -tap -qed -n
 --- stdout ---
 001
 002
@@ -6625,7 +6626,7 @@ Adding test "io-qed-remove-bitmap-from-backing"
 Adding test "io-qed-reopen-file"
 Adding test "io-qed-stream-error-on-reset"
 Adding test "io-qed-stream-under-throttle"
-Running command: /usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/tests/qemu-iotests/check -tap -vmdk -n
+Running command: /usr/bin/python3 /home/leroooy/QemuNXP/tests/qemu-iotests/check -tap -vmdk -n
 --- stdout ---
 001
 002
@@ -7263,7 +7264,7 @@ Adding test "io-vmdk-remove-bitmap-from-backing"
 Adding test "io-vmdk-reopen-file"
 Adding test "io-vmdk-stream-error-on-reset"
 Adding test "io-vmdk-stream-under-throttle"
-Running command: /usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/tests/qemu-iotests/check -tap -vpc -n
+Running command: /usr/bin/python3 /home/leroooy/QemuNXP/tests/qemu-iotests/check -tap -vpc -n
 --- stdout ---
 001
 002
@@ -8056,7 +8057,7 @@ Package 'sysprof-capture-4', required by 'virtual:world', not found
 CMake binary for host machine is cached as not found
 CMake binary for machine host machine not found. Giving up.
 Run-time dependency sysprof-capture-4 found: NO (tried pkgconfig and cmake)
-Program initrd-stress.sh found: YES (/home/Antonello/Desktop/qemu-AVR32/tests/migration/initrd-stress.sh)
+Program initrd-stress.sh found: YES (/home/leroooy/QemuNXP/tests/migration/initrd-stress.sh)
 Build targets in project: 474
 
 qemu 8.0.50
@@ -8074,8 +8075,8 @@ qemu 8.0.50
     local state directory        : /var/local
     Manual directory             : /usr/local/share/man
     Doc directory                : /usr/local/share/doc
-    Build directory              : /home/Antonello/Desktop/qemu-AVR32/build
-    Source path                  : /home/Antonello/Desktop/qemu-AVR32
+    Build directory              : /home/leroooy/QemuNXP/build
+    Source path                  : /home/leroooy/QemuNXP
     GIT submodules               : ui/keycodemapdb tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc
 
   Host binaries
@@ -8194,7 +8195,7 @@ qemu 8.0.50
     libtasn1                     : NO
     PAM                          : NO
     iconv support                : YES
-    curses support               : NO
+    curses support               : YES
     virgl support                : NO
     blkio support                : NO
     curl support                 : NO
@@ -8261,23 +8262,23 @@ qemu 8.0.50
 
 Found ninja-1.11.1 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp63abpfbc
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmp0us_098h
 Code:
  
 -----------
-Command line: `cc -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp63abpfbc/testfile.c -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmp63abpfbc/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+Command line: `cc -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmp0us_098h/testfile.c -o /home/leroooy/QemuNXP/build/meson-private/tmp0us_098h/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
 stdout:
 install: /usr/lib/gcc/x86_64-linux-gnu/13/
 programs: =/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/bin/
 libraries: =/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/13/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/13/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
 -----------
 Running compile:
-Working directory:  /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsw4jsbra
+Working directory:  /home/leroooy/QemuNXP/build/meson-private/tmpgewl5p50
 Code:
  int main(void) { return 0; }
 
 -----------
-Command line: `c++ -m64 -mcx16 /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsw4jsbra/testfile.cpp -o /home/Antonello/Desktop/qemu-AVR32/build/meson-private/tmpsw4jsbra/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -lstdc++ -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
+Command line: `c++ -m64 -mcx16 /home/leroooy/QemuNXP/build/meson-private/tmpgewl5p50/testfile.cpp -o /home/leroooy/QemuNXP/build/meson-private/tmpgewl5p50/output.exe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -lstdc++ -Wl,--end-group -Wl,--allow-shlib-undefined` -> 0
 Failed to guess install tag for /usr/local/share/qemu/trace-events-all
 Failed to guess install tag for /var/local/run
 Failed to guess install tag for /usr/local/share/icons/hicolor/16x16/apps/qemu.png
@@ -8488,4 +8489,4 @@ Failed to guess install tag for /usr/local/share/qemu/keymaps/th
 Failed to guess install tag for /usr/local/share/qemu/keymaps/tr
 Failed to guess install tag for /usr/local/share/qemu/keymaps/sl
 Failed to guess install tag for /usr/local/share/qemu/keymaps/sv
-Running postconf script '/usr/bin/python3 /home/Antonello/Desktop/qemu-AVR32/scripts/symlink-install-tree.py'
+Running postconf script '/usr/bin/python3 /home/leroooy/QemuNXP/scripts/symlink-install-tree.py'

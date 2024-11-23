@@ -18,7 +18,7 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_genCases_f32.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h ../tests/fp/platform.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/random.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat_types.h \

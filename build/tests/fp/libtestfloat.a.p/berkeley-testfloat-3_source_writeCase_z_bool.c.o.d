@@ -33,7 +33,7 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_writeCase_z_bool.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h ../tests/fp/platform.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/writeHex.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat_types.h \

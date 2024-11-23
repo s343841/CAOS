@@ -18,7 +18,7 @@ typedef struct NXPACPUDef NXPACPUDef;
  *
  *  A NXP CPU model.
  */
-struct AVR32ACPUClass {
+struct NXPACPUClass {
     /*< private >*/
     CPUClass parent_class;
 

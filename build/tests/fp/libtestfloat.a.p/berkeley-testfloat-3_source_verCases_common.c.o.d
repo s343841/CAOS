@@ -93,7 +93,7 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_verCases_common.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h ../tests/fp/platform.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  ../tests/fp/berkeley-testfloat-3/source/verCases.h \
  ../tests/fp/berkeley-testfloat-3/source/uint128.h \
  ../tests/fp/berkeley-softfloat-3/source/include/softfloat.h \

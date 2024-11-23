@@ -1,8 +1,8 @@
 libqemuutil.a.p/qapi_qobject-input-visitor.c.o: \
  ../qapi/qobject-input-visitor.c /usr/include/stdc-predef.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/osdep.h config-host.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/poison.h config-poison.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/osdep.h config-host.h \
+ /home/leroooy/QemuNXP/include/exec/poison.h config-poison.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
@@ -109,9 +109,9 @@ libqemuutil.a.p/qapi_qobject-input-visitor.c.o: \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/asm-generic/bitsperlong.h \
+ /home/leroooy/QemuNXP/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/linux/stddef.h \
+ /home/leroooy/QemuNXP/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -147,9 +147,8 @@ libqemuutil.a.p/qapi_qobject-input-visitor.c.o: \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
  /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
- /home/Antonello/Desktop/qemu-AVR32/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/leroooy/QemuNXP/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
@@ -229,7 +228,7 @@ libqemuutil.a.p/qapi_qobject-input-visitor.c.o: \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/glib-2.0/glib/gstdio.h \
  /usr/include/glib-2.0/glib/gprintf.h /usr/include/pwd.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/os-posix.h \
+ /home/leroooy/QemuNXP/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -252,8 +251,8 @@ libqemuutil.a.p/qapi_qobject-input-visitor.c.o: \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/typedefs.h \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /home/leroooy/QemuNXP/include/qemu/typedefs.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -262,23 +261,22 @@ libqemuutil.a.p/qapi_qobject-input-visitor.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/compat-policy.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/error.h \
- qapi/qapi-types-error.h qapi/qapi-builtin-types.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/util.h \
+ /home/leroooy/QemuNXP/include/qapi/compat-policy.h \
+ /home/leroooy/QemuNXP/include/qapi/error.h qapi/qapi-types-error.h \
+ qapi/qapi-builtin-types.h /home/leroooy/QemuNXP/include/qapi/util.h \
  qapi/qapi-types-compat.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qobject-input-visitor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/visitor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/visitor-impl.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/queue.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qjson.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qbool.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qobject.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qdict.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qerror.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qlist.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qnull.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qnum.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/qmp/qstring.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/cutils.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/keyval.h
+ /home/leroooy/QemuNXP/include/qapi/qobject-input-visitor.h \
+ /home/leroooy/QemuNXP/include/qapi/visitor.h \
+ /home/leroooy/QemuNXP/include/qapi/visitor-impl.h \
+ /home/leroooy/QemuNXP/include/qemu/queue.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qjson.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qbool.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qobject.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qdict.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qerror.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qlist.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qnull.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qnum.h \
+ /home/leroooy/QemuNXP/include/qapi/qmp/qstring.h \
+ /home/leroooy/QemuNXP/include/qemu/cutils.h \
+ /home/leroooy/QemuNXP/include/qemu/keyval.h

@@ -19,7 +19,7 @@ static uint32_t decode_insn_load_bytes(DisasContext *ctx, uint32_t insn,
     // TODO: We can probably just load 4 bytes and decide to only use 2 of them
     ctx->dis->read_memory_func(ctx->addr, ctx->bytes, 2, ctx->dis);
 
-    if((ctx->bytes[0] & nxp_EXTENDED_INSTR_FORMAT_MASK_LE) == nxp_EXTENDED_INSTR_FORMAT_MASK_LE)
+    if((ctx->bytes[0] & NXP_EXTENDED_INSTR_FORMAT_MASK_LE) == NXP_EXTENDED_INSTR_FORMAT_MASK_LE)
     {
         ctx->dis->read_memory_func(ctx->addr, ctx->bytes, 4, ctx->dis);
 

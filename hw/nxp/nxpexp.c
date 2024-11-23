@@ -52,7 +52,7 @@ static void nxpexp_class_init(ObjectClass *oc, void *data)
     dc->user_creatable = false;
 }
 
-static void nxp2exps_class_init(ObjectClass *oc, void *data){
+static void nxpexps_class_init(ObjectClass *oc, void *data){
 
     NXPEXPMcuClass* nxpexp = NXPEXP_MCU_CLASS(oc);
 

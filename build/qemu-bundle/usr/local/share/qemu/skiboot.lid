@@ -1,1 +1,1 @@
-/home/Antonello/Desktop/qemu-AVR32/pc-bios/skiboot.lid
+/home/leroooy/QemuNXP/pc-bios/skiboot.lid

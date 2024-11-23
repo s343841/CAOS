@@ -16,7 +16,7 @@ unset MAKE
 unset NM
 unset OBJCFLAGS
 unset OBJCOPY
-PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'
+PATH='/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PATH
 unset PKG_CONFIG
 unset PKG_CONFIG_LIBDIR
@@ -31,4 +31,4 @@ unset STRIP
 unset WIDL
 unset WINDRES
 unset WINDMC
-exec '/home/Antonello/Desktop/qemu-AVR32/configure' '--target-list=nxp-softmmu' "$@"
+exec '/home/leroooy/QemuNXP/configure' '--target-list=nxp-softmmu' "$@"

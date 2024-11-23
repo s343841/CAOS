@@ -103,7 +103,7 @@ bool nxp_load_elf_file(NXPACPU *cpu, const char *filename, MemoryRegion *program
         // check if it's really an elf file
         if (memcmp(header.e_ident, ELFMAG, SELFMAG) == 0) {
             nxp_convert_elf_header(&header);
-            if(header.e_machine == EM_NXP){
+            if(header.e_machine == EM_ARM){
                 sh_table = malloc(header.e_shnum * sizeof (Elf32_Shdr*));
 
                 nxp_elf_read_section_headers(&header, file, sh_table);

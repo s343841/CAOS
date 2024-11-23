@@ -1,1 +1,1 @@
-/home/Antonello/Desktop/qemu-AVR32/pc-bios/edk2-licenses.txt
+/home/leroooy/QemuNXP/pc-bios/edk2-licenses.txt

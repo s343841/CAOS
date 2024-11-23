@@ -75,7 +75,7 @@
 
 #undef CONFIG_CURL
 
-#undef CONFIG_CURSES
+#define CONFIG_CURSES
 
 #define CONFIG_DBUS_DISPLAY
 

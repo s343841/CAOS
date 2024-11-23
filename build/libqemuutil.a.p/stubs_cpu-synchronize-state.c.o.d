@@ -1,8 +1,8 @@
 libqemuutil.a.p/stubs_cpu-synchronize-state.c.o: \
  ../stubs/cpu-synchronize-state.c /usr/include/stdc-predef.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/osdep.h config-host.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/poison.h config-poison.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/osdep.h config-host.h \
+ /home/leroooy/QemuNXP/include/exec/poison.h config-poison.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
@@ -109,9 +109,9 @@ libqemuutil.a.p/stubs_cpu-synchronize-state.c.o: \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/asm-generic/bitsperlong.h \
+ /home/leroooy/QemuNXP/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/Antonello/Desktop/qemu-AVR32/linux-headers/linux/stddef.h \
+ /home/leroooy/QemuNXP/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -147,9 +147,8 @@ libqemuutil.a.p/stubs_cpu-synchronize-state.c.o: \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
  /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
- /home/Antonello/Desktop/qemu-AVR32/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/leroooy/QemuNXP/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
@@ -229,7 +228,7 @@ libqemuutil.a.p/stubs_cpu-synchronize-state.c.o: \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/glib-2.0/glib/gstdio.h \
  /usr/include/glib-2.0/glib/gprintf.h /usr/include/pwd.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/os-posix.h \
+ /home/leroooy/QemuNXP/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -252,45 +251,44 @@ libqemuutil.a.p/stubs_cpu-synchronize-state.c.o: \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/typedefs.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/hw_accel.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/core/cpu.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/qdev-core.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/queue.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/bitmap.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/bitops.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/host-utils.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/bswap.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/int128.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/atomic.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/rcu.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/thread.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/processor.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/atomic.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/clang-tsa.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/thread-posix.h \
+ /home/leroooy/QemuNXP/include/qemu/typedefs.h \
+ /home/leroooy/QemuNXP/include/sysemu/hw_accel.h \
+ /home/leroooy/QemuNXP/include/hw/core/cpu.h \
+ /home/leroooy/QemuNXP/include/hw/qdev-core.h \
+ /home/leroooy/QemuNXP/include/qemu/queue.h \
+ /home/leroooy/QemuNXP/include/qemu/bitmap.h \
+ /home/leroooy/QemuNXP/include/qemu/bitops.h \
+ /home/leroooy/QemuNXP/include/qemu/host-utils.h \
+ /home/leroooy/QemuNXP/include/qemu/bswap.h \
+ /home/leroooy/QemuNXP/include/qemu/int128.h \
+ /home/leroooy/QemuNXP/include/qemu/atomic.h \
+ /home/leroooy/QemuNXP/include/qemu/compiler.h \
+ /home/leroooy/QemuNXP/include/qemu/rcu.h \
+ /home/leroooy/QemuNXP/include/qemu/thread.h \
+ /home/leroooy/QemuNXP/include/qemu/processor.h \
+ /home/leroooy/QemuNXP/include/qemu/atomic.h \
+ /home/leroooy/QemuNXP/include/qemu/clang-tsa.h \
+ /home/leroooy/QemuNXP/include/qemu/thread-posix.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/qsp.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/notify.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/sys_membarrier.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/coroutine-tls.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/rcu_queue.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qom/object.h \
- qapi/qapi-builtin-types.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qapi/util.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/module.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/hotplug.h \
- /home/Antonello/Desktop/qemu-AVR32/include/hw/resettable.h \
- /home/Antonello/Desktop/qemu-AVR32/include/disas/dis-asm.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/cpu-common.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/hwaddr.h \
- /home/Antonello/Desktop/qemu-AVR32/include/exec/memattrs.h \
+ /home/leroooy/QemuNXP/include/qemu/qsp.h \
+ /home/leroooy/QemuNXP/include/qemu/notify.h \
+ /home/leroooy/QemuNXP/include/qemu/sys_membarrier.h \
+ /home/leroooy/QemuNXP/include/qemu/coroutine-tls.h \
+ /home/leroooy/QemuNXP/include/qemu/rcu_queue.h \
+ /home/leroooy/QemuNXP/include/qom/object.h qapi/qapi-builtin-types.h \
+ /home/leroooy/QemuNXP/include/qapi/util.h \
+ /home/leroooy/QemuNXP/include/qemu/module.h \
+ /home/leroooy/QemuNXP/include/hw/hotplug.h \
+ /home/leroooy/QemuNXP/include/hw/resettable.h \
+ /home/leroooy/QemuNXP/include/disas/dis-asm.h \
+ /home/leroooy/QemuNXP/include/exec/cpu-common.h \
+ /home/leroooy/QemuNXP/include/exec/hwaddr.h \
+ /home/leroooy/QemuNXP/include/exec/memattrs.h \
  qapi/qapi-types-run-state.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/plugin-event.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/hax.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/kvm.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/accel.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/hvf.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/whpx.h \
- /home/Antonello/Desktop/qemu-AVR32/include/sysemu/nvmm.h
+ /home/leroooy/QemuNXP/include/qemu/plugin-event.h \
+ /home/leroooy/QemuNXP/include/sysemu/hax.h \
+ /home/leroooy/QemuNXP/include/sysemu/kvm.h \
+ /home/leroooy/QemuNXP/include/qemu/accel.h \
+ /home/leroooy/QemuNXP/include/sysemu/hvf.h \
+ /home/leroooy/QemuNXP/include/sysemu/whpx.h \
+ /home/leroooy/QemuNXP/include/sysemu/nvmm.h

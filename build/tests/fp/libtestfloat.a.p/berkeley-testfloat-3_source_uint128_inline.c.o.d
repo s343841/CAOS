@@ -18,4 +18,4 @@ tests/fp/libtestfloat.a.p/berkeley-testfloat-3_source_uint128_inline.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h ../tests/fp/platform.h \
- /home/Antonello/Desktop/qemu-AVR32/include/qemu/compiler.h
+ /home/leroooy/QemuNXP/include/qemu/compiler.h
